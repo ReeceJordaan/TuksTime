@@ -1,0 +1,1301 @@
+Module,Venues,Campuses,Offered
+ABR311,IT 4-4,HATFIELD,S1
+ABR410,vd Bijl Hall,HATFIELD,S1
+ABV320,Roos hall,HATFIELD,S2
+AFR110,Aldoel Bld 1-133; HB 4-6,GROENKLOOF; HATFIELD,S1
+AFR114,HB 3-14,HATFIELD,S1
+AFR120,Aldoel Bld 2-97; HB 4-6; IT 4-3,GROENKLOOF; HATFIELD,S2
+AFR210,HB 3-14; HB 4-5,HATFIELD,S1
+AFR214,HB 4-16; Lecture Theatre L2,GROENKLOOF; HATFIELD,S1
+AFR220,Aldoel Bld 1-133; HB 3-14; HB 3-24,GROENKLOOF; HATFIELD,S2
+AFR311,HB 1-10,HATFIELD,S1
+AFR321,HB 2-15,HATFIELD,S2
+AFR358,HB 2-15,HATFIELD,S1
+AFT121,Aldoel 2; Aldoel 3; Aldoel Bld 2-83/84; Aldoel Bld 2-89/90; HB 3-14; HB 3-15; HB 3-24; HB 4-14; HB 4-6; HB 4-7; HB 4-8,GROENKLOOF; HATFIELD,S2
+AFT220,Aldoel 3; HB 3-23; HB 3-24; HB 4-14; HB 4-5; Lecture Theatre L1; Lecture Theatre L2; Lecture Theatre L4,GROENKLOOF; HATFIELD,S2
+AFT320,Aldoel Bld 2-83/84; Aldoel Bld 2-89/90; Aldoel Bld 2-97; Aldoel Bld 3-22; Aldoel Bld 3-26; HB 3-14; HB 4-16,GROENKLOOF; HATFIELD,S2
+AGF420,IT 2-25,HATFIELD,S2
+AGL110,HB 3-15; HB 3-24; HB 4-13; HB 4-9,HATFIELD,S1
+AGL120,HB 3-14; HB 4-7,HATFIELD,S2
+AGL210,HB 4-13; HB 4-16,HATFIELD,S1
+AGL220,HB 4-16; HB 4-8,HATFIELD,S2
+AGL310,HB 1-7,HATFIELD,S1
+AGL320,HB 1-7,HATFIELD,S2
+AGR361,Agric Annex 2-7,HATFIELD,S2
+AGR410,Agric Science 5-11,HATFIELD,S1
+AGR786,Agric Science 5-11,HATFIELD,S1
+AIM111,Only Theology Students: Consult AIM Labs,HATFIELD,S1
+AIM121,Only Theology Students: Consult AIM Labs,HATFIELD,S2
+AKG110,HB 4-6,HATFIELD,S1
+AKG120,HB 4-7,HATFIELD,S2
+AKG210,HB 4-16,HATFIELD,S1
+AKG220,HB 3-14; HB 4-5,HATFIELD,S2
+AKG310,HB 1-7,HATFIELD,S1
+AKG320,HB 1-7,HATFIELD,S2
+ALL110,HB 3-15; HB 3-23; HB 4-13; HB 4-14,HATFIELD,S1
+ALL120,Theology 1-11; Theology 1-28; Theology 2-1,HATFIELD,S2
+ALL121,HB 3-15; HB 3-23; HB 4-12; HB 4-14; HB 4-15; HB 4-8,HATFIELD,S2
+ALL124,HB 4-12; HB 4-13; HB 4-15; HB 4-6; HB 4-8; HB 4-9,HATFIELD,S2
+ALL125,HB 3-15; HB 3-23; HB 4-12; HB 4-15,HATFIELD,S2
+ALL126,HB 3-23; HB 4-13; HB 4-6; HB 4-8; HB 4-9,HATFIELD,S2
+AMR410,Consult Department,HATFIELD,S1
+ANA121,IT 4-2; NS1 2-2.6,HATFIELD,S2
+ANA122,IT 4-2; NS1 2-2.6,HATFIELD,S2
+ANA126,IT 4-2; NS1 2-2.6,HATFIELD,S2
+ANA214,Consult Department; HB 3-23,HATFIELD,S1
+ANA215,Consult Department; HB 3-23,HATFIELD,S1
+ANA226,Consult Department; HB 4-8,HATFIELD,S2
+ANA247,BMS 3-6; BMS 5-22,HATFIELD,S2
+ANA315,NS1 2-2.6,HATFIELD,S1
+ANA316,HB 4-7; HB 4-8,HATFIELD,S1
+ANA324,HB 3-14,HATFIELD,S2
+ANA347,Consult Department,HATFIELD,S2
+ANO410,Law building 1-54,HATFIELD,S1
+APL110,HB 3-15; HB 3-23; HB 3-24; HB 4-13; HB 4-15; HB 4-6; HB 4-7; HB 4-8; HB 4-9; IT 2-24; Roos hall,HATFIELD,S1
+APL120,AE du Toit Auditorium; HB 3-14; HB 4-12; HB 4-14; HB 4-15; HB 4-6; HB 4-7; HB 4-8; IT 4-2; Large Chemistry Hall,HATFIELD,S2
+APL210,HB 3-24; HB 4-1; HB 4-14; HB 4-15; Theology 1-19,HATFIELD,S1
+APL220,HB 3-14; HB 3-24; HB 4-15; HB 4-3; HB 4-5; HB 4-9,HATFIELD,S2
+APL310,HB 3-24,HATFIELD,S1
+APL320,HB 3-24,HATFIELD,S2
+APS461,Agric Science 5-11,HATFIELD,S2
+APS761,Agric Science 5-11,HATFIELD,S2
+ARD485,Agric Annex 2-7; HB 4-6,HATFIELD,S1
+BAC200,Centenary 1; Centenary 2; Centenary 3; Centenary 4; Centenary 5; Centenary 6; IT 4-5,HATFIELD,S1; S2
+BAC300,Centenary 1; Centenary 2; Centenary 4; Centenary 6; Roos hall,HATFIELD,S1; S2; Y
+BAC310,Centenary 1; Centenary 2; Centenary 4; Roos hall,HATFIELD,S1
+BAM133,HB 3-23; HB 4-13; HB 4-14; HB 4-6; HB 4-7; IT 2-24; IT 2-25; IT 2-27; IT 4-3; IT 4-4,HATFIELD,S1
+BAN313,Eng III - 2; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+BCM251,AE du Toit Auditorium; Biolab D; Roos hall,HATFIELD,S1
+BCM252,Biolab D; Roos hall,HATFIELD,S2
+BCM257,Biolab D; Thuto 1-2,HATFIELD,S1
+BCM261,Biolab D; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+BCM356,Biolab A; Biolab B; Biolab C; Biolab D; EMS 4-150; EMS 4-151,HATFIELD,S1
+BCM357,Biolab A; Biolab B; Biolab D; EMS 4-150; EMS 4-151,HATFIELD,S1
+BCM367,Biolab A; Biolab B; Biolab D; IT 2-25,HATFIELD,S2
+BCM368,AE Annex; EMS 4-150,HATFIELD,S2
+BDO121,Centenary 1; Centenary 6,HATFIELD,S2
+BDO214,EMS 4-151; EMS 4-152,HATFIELD,S1
+BDO224,Te Water hall,HATFIELD,S2
+BDO272,HB 3-24,HATFIELD,Y
+BDO319,Louw hall,HATFIELD,S1
+BDO329,EMS 4-151,HATFIELD,S2
+BDO371,HB 4-16,HATFIELD,Y
+BDO372,HB 3-14,HATFIELD,S1
+BDO373,HB 3-14; IT 2-25; IT 4-3,HATFIELD,S2
+BEL200,Centenary 1; Centenary 4; Centenary 5,HATFIELD,Y
+BEL300,Centenary 6; EMS 4-152; IT 4-4,HATFIELD,Y
+BEM120,Thuto 1-1; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+BEM212,Centenary 2,HATFIELD,S1
+BEM224,IT 2-27,HATFIELD,S2
+BEM256,IT 2-25,HATFIELD,S2
+BEM314,Thuto 1-2,HATFIELD,S1
+BEM315,HB 4-12,HATFIELD,S1
+BEM321,IT 4-4,HATFIELD,S2
+BEM356,HB 3-14; HB 4-15,HATFIELD,S1; S2
+BER210,Centenary 1; Centenary 3; Centenary 5,HATFIELD,S1
+BER220,Centenary 1; Centenary 2; Centenary 4,HATFIELD,S2
+BER310,Centenary 3,HATFIELD,S1
+BES220,Eng III - 6; Thuto 1-2; Thuto 3-2,HATFIELD,S2
+BFB321,Eng III - 4; Informatorium CBT Lab 1; Informatorium CBT Lab 2; Informatorium CBT Lab 3,HATFIELD,S2
+BGC410,Eng II 2-37,HATFIELD,S1
+BID320,Eng III - 4; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4; HB 3-15; HB 4-3,HATFIELD,S2
+BIE420,Eng III - 2; Eng III - 5,HATFIELD,S2
+BIO137,Centenary 1; EMS 4-152; Plant Science complex 2-10; Plant Science complex 2-11,HATFIELD,S1
+BIO147,Centenary 6; IT 4-5; Plant Science complex 2-10; Plant Science complex 2-11,HATFIELD,S2
+BJJ210,Eng II 2-37; Eng III - 3,HATFIELD,S1
+BLK321,Eng I 1-1; Eng III - 5,HATFIELD,S2
+BLP420,Law building 1-31,HATFIELD,S2
+BLR310,Centenary 1; Centenary 3; Thuto 1-2,HATFIELD,S1
+BME120,Large Chemistry Hall; Louw hall; Roos hall; Thuto 1-1; Thuto 1-2,HATFIELD,S2
+BME210,IT 2-25,HATFIELD,S1
+BMN420,Agric Annex 2-18,HATFIELD,S2
+BOB311,Eng III - 2; Eng III - 3,HATFIELD,S1
+BON410,Eng II 3-40; Eng II 4-38,HATFIELD,S1
+BOT161,AE du Toit Auditorium; Plant Science complex 2-11,HATFIELD,S2
+BOT251,Centenary 1; Centenary 4; IT 4-4,HATFIELD,S1
+BOT261,Plant Science complex 2-10; Plant Science complex 2-11; South hall,HATFIELD,S2
+BOT356,Plant Science Auditorium 3-50; Plant Science complex 2-10,HATFIELD,S1
+BOT358,Plant Science Auditorium 3-50; Plant Science complex 2-11,HATFIELD,S1
+BOT365,Plant Science Auditorium 3-50; Plant Science complex 2-10,HATFIELD,S2
+BOT366,Plant Science Auditorium 3-50; Plant Science complex 2-10,HATFIELD,S2
+BOZ312,Eng III - 2; Eng III - 3,HATFIELD,S1
+BPE221,Centenary 4,HATFIELD,S2
+BPJ410,Eng III - 5,HATFIELD,S1
+BPJ420,Eng III - 5,HATFIELD,S2
+BPZ220,Eng III - 2; Eng III - 5; Te Water hall,HATFIELD,S2
+BPZ321,Eng II 2-37; Eng III - 2; Eng III - 5,HATFIELD,S2
+BSR410,Eng II 2-37,HATFIELD,S1
+BSS310,Eng III - 1; Eng III - 6,HATFIELD,S1
+BSS410,Eng III - 4,HATFIELD,S2
+BTC361,Agric Annex 2-18; Agric Annex 2-7; Biolab D,HATFIELD,S2
+BUS100,AE du Toit Auditorium; Centenary 3; Centenary 5; Centenary 6; EMS 4-151; IT 2-27; IT 4-2; IT 4-3; IT 4-4; IT 4-5; Thuto 3-2,HATFIELD,S1; S2; Y
+BUS200,Centenary 1; Centenary 3; Thuto 1-1; Thuto 1-2,HATFIELD,S1; S2; Y
+BUS300,Centenary 2; Centenary 4; IT 4-1; IT 4-5,HATFIELD,Y
+BUY321,Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S2
+BWR310,Thuto 1-1,HATFIELD,S1
+BWR320,Thuto 3-2,HATFIELD,S2
+BYT251,Theology 1-28,HATFIELD,Y
+BYT310,Theology 2-28,HATFIELD,S1
+BYT320,Theology 2-28,HATFIELD,S2
+CBI310,Eng II 2-27; Eng III - 4,HATFIELD,S1
+CCI100,Lecture Theatre L5,GROENKLOOF,S1
+CCW100,Lecture Theatre L6,GROENKLOOF,S1
+CCZ100,Aldoel 1; Aldoel 3,GROENKLOOF,S1
+CHM171,Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Eng III - 1; Eng III - 6; Large Chemistry Hall; North hall; South hall,HATFIELD,S1
+CHM172,AE Annex; Centenary 2; Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Eng III - 1; Eng III - 4; Eng III - 6; Large Chemistry Hall,HATFIELD,S2
+CHM181,Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Eng III - 2; Eng III - 3; Eng III - 4; South hall,HATFIELD,S2
+CHM215,Consult Department; Eng II 3-34; South hall,HATFIELD,S1
+CHM226,Chemistry 3-19; Eng II 3-34; Eng II 4-38,HATFIELD,S2
+CIM211,Eng I 1-1,HATFIELD,S1
+CIO320,Eng II 2-27,HATFIELD,S2
+CIR113,Eng II 2-27; Eng II 2-36; Eng III - 4,HATFIELD,S1
+CIR123,Eng II 2-36; Eng III - 4,HATFIELD,S2
+CIR211,Eng I 1-1; Eng II 2-36,HATFIELD,S1
+CIR310,Eng II 4-38,HATFIELD,S1
+CJJ310,Eng I 1-2,HATFIELD,S1
+CKN321,Eng II 3-31; Scienza - Goldfields Lab 1,HATFIELD,S2
+CLA420,Consult Department,HATFIELD,S2
+CLB321,Consult Department; Eng I 1-3; Eng III - 3,HATFIELD,S2
+CLW420,Law building 1-31,HATFIELD,S2
+CMO310,Eng I 1-1; Eng II 2-27; Eng NS2 Comp Lab 1,HATFIELD,S1
+CMY117,Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Large Chemistry Hall; Roos hall; Thuto 1-1; Thuto 3-1,HATFIELD,S1
+CMY127,AE du Toit Auditorium; Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Large Chemistry Hall; Muller hall; North hall; South hall; Thuto 1-2; Thuto 3-2,HATFIELD,S2
+CMY137,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; Centenary 6; Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; IT 4-1,HATFIELD,S1
+CMY147,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; Centenary 6; Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; IT 4-1,HATFIELD,S2
+CMY151,Chemistry Lab 1-24; Chemistry Lab 1-40; Chemistry Lab 1-40 Ext; Large Chemistry Hall; North hall; South hall,HATFIELD,S1
+CMY282,Chemistry 3-31; Muller hall; Te Water hall,HATFIELD,S1
+CMY283,Chemistry 3-31; IT 2-25; IT 2-27; Muller hall,HATFIELD,S2
+CMY284,Chemistry 2-18; Chemistry 2-32.1; Chemistry 2-35; IT 2-25; South hall; Te Water hall,HATFIELD,S1
+CMY285,Chemistry 2-18; Chemistry 2-35; HB 4-9; Muller hall,HATFIELD,S2
+CMY382,Chemistry 2-32.1; Chemistry 3-1; Chemistry 3-31,HATFIELD,S1
+CMY383,Chemistry 2-32.1; Chemistry 3-1; Chemistry 3-31,HATFIELD,S2
+CMY384,Chemistry 2-18; Chemistry 2-32.1; Chemistry 2-35; Chemistry 3-1,HATFIELD,S2
+CMY385,Chemistry 2-18; Chemistry 2-32.1; Chemistry 2-35; Chemistry 3-1,HATFIELD,S1
+COP311,Eng II 2-27; Eng II 2-36; Eng II 3-34,HATFIELD,S1
+COS110,Centenary 5; IT 2-23; IT 2-25; IT 2-26; IT 2-27; IT 4-1; IT 4-5; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium SIT 1 lab,HATFIELD,S2
+COS122,Centenary 3; IT 2-23; IT 4-1; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S2
+COS132,Centenary 1; Centenary 4; Centenary 6; EMS 4-152; IT 2-23; IT 2-26; IT 2-27; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S1
+COS151,IT 2-23; Informatorium Orange Lab; Thuto 1-2,HATFIELD,S1
+COS210,IT 2-26,HATFIELD,S1
+COS212,Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Maroon Lab; Informatorium Purple Lab; Large Chemistry Hall; Louw hall; Roos hall,HATFIELD,S1
+COS214,Centenary 6; IT 4-4; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium SIT 1 lab,HATFIELD,S2
+COS216,IT 2-23; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Maroon Lab,HATFIELD,S1
+COS221,IT 2-26; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Grey Lab; Informatorium Maroon Lab,HATFIELD,S1
+COS226,IT 2-26; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Maroon Lab; Informatorium Orange Lab,HATFIELD,S2
+COS284,Centenary 1; IT 2-23; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Purple Lab,HATFIELD,S2
+COS301,IT 2-23; IT 2-26; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Purple Lab,HATFIELD,S1; S2; Y
+COS314,EMS 4-151; IT 2-27; Informatorium Brown Lab; Informatorium Grey Lab; Informatorium Maroon Lab,HATFIELD,S1
+COS326,IT 2-26; Informatorium Green Lab,HATFIELD,S2
+COS330,IT 2-26; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium SIT 1 lab,HATFIELD,S2
+COS332,IT 2-26; Informatorium Green Lab; Informatorium Grey Lab; Informatorium SIT 1 lab,HATFIELD,S1
+COS333,IT 2-26; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Green Lab; Informatorium Purple Lab,HATFIELD,S1
+COS341,Centenary 4; IT 2-26; Informatorium Orange Lab; Informatorium Purple Lab,HATFIELD,S2
+COS344,IT 2-24; Informatorium Purple Lab,HATFIELD,S1
+COS700,IT 4-3,HATFIELD,Y
+CPA410,Eng II 3-31; Eng II 3-34; Eng II 4-30,HATFIELD,S1
+CPB410,Eng II 3-34; Eng II 4-21; Eng III - 4,HATFIELD,S1
+CPJ421,Eng II 4-30,HATFIELD,S2
+CPN321,Eng II 2-27; Eng II 2-36; Eng NS2 Comp Lab 1,HATFIELD,S2
+CPR420,Eng II 4-21,HATFIELD,Q3
+CPS410,Eng II 4-21; Eng III - 4; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+CPS420,Eng II 2-37; Eng II 3-31; Eng II 4-21,HATFIELD,Q3
+CRO410,Eng II 3-31; Eng II 3-34; Eng II 4-30; Eng III - 4; Scienza - Goldfields Lab 1,HATFIELD,S1
+CSC411,Consult Department,HATFIELD,S1
+CSC421,Consult Department; Eng I 1-3,HATFIELD,S2
+CSS420,Eng II 4-36,HATFIELD,S2
+CSS421,Eng II 4-21,HATFIELD,S2
+CSS422,Eng II 3-25; Eng II 3-31,HATFIELD,S2
+CSS423,Eng II 3-34; HB 4-7,HATFIELD,S2
+CTD223,Eng II 2-27; Eng II 2-36,HATFIELD,S2
+CYE110,Theology 2-38,HATFIELD,S1
+CYE120,Theology 2-38,HATFIELD,S2
+CYE212,Consult Department,HATFIELD,S1
+CYE222,Consult Department,HATFIELD,S2
+CYE300,Theology 1-28,HATFIELD,Y
+CYE301,Theology 1-28,HATFIELD,Y
+CYE302,Theology 1-28,HATFIELD,Y
+CYE312,Theology 2-38,HATFIELD,S1
+CYE322,Theology 1-28,HATFIELD,S2
+DAF200,HB 4-14; IT 2-25; IT 4-2; IT 4-3,HATFIELD,S1; S2; Y
+DFK110,HB 4-6; HB 4-7,HATFIELD,S1
+DFK120,IT 2-25; IT 2-26,HATFIELD,S2
+DFK210,IT 4-2; IT 4-3,HATFIELD,S1
+DFK220,IT 2-24; IT 4-2,HATFIELD,S2
+DFK310,HB 3-14,HATFIELD,S1
+DFK320,HB 3-24,HATFIELD,S2
+DFS311,Agric Annex 2-18,HATFIELD,S1
+DFS320,Agric Annex 2-7; IT 4-2,HATFIELD,S2
+DLR320,Law building 1-54; Thuto 1-1; Thuto 1-2; vd Bijl Hall,HATFIELD,S2
+DMN410,Agric Annex 2-18,HATFIELD,S1
+DRL420,Law building 1-31,HATFIELD,S2
+DTS104,HB 1-14,HATFIELD,Y
+DTS113,HB 1-14,HATFIELD,S1
+DTS123,HB 1-14,HATFIELD,S2
+DTS211,HB 1-14,HATFIELD,S1
+DTS221,HB 1-14,HATFIELD,S2
+DTS361,HB 1-14,HATFIELD,S1
+DTS362,HB 1-14,HATFIELD,S1
+DTS363,HB 1-14,HATFIELD,S2
+DTS364,HB 1-14,HATFIELD,S2
+EAD410,Eng I 1-2; Eng I M-Lab 2-24,HATFIELD,S1
+EAI320,Eng III - 3; Eng III - 5; Eng III - Net Lab A,HATFIELD,S1
+EAS410,Eng II 4-30; Eng III - Net Lab A,HATFIELD,S1
+EBB320,AE Annex; Eng III - 1; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C,HATFIELD,S2
+EBN111,AE du Toit Auditorium; Eng II 4-39 CAEC Lab; Eng III - 6; Roos hall,HATFIELD,S1
+EBN122,Eng II 4-39 CAEC Lab; Eng III - 1; Thuto 1-2,HATFIELD,S2
+EBT410,Eng II 4-38; Eng III - Electronic Lab A; Eng III - Electronic Lab C,HATFIELD,S1
+EDC310,Eng II 2-37; Eng III - Net Lab A; Eng III - Net Lab B,HATFIELD,S2
+EDF320,Eng I 1-3; Eng I M-Lab 2-24; Eng III - 5,HATFIELD,S2
+EES424,Eng II 3-40; Eng II 4-30; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C,HATFIELD,Q1; Q3
+EFK110,Aldoel 1; HB 1-15; HB 4-2; Lecture Theatre L3,GROENKLOOF; HATFIELD,S1
+EFK120,Aldoel 1; HB 3-23; HB 4-2; IT 4-1; Lecture Theatre L1,GROENKLOOF; HATFIELD,S2
+EFK210,HB 3-15; HB 3-23; Lecture Theatre L6,GROENKLOOF; HATFIELD,S1
+EFK220,Aldoel 3; HB 4-1,GROENKLOOF; HATFIELD,S2
+EFK310,Aldoel Bld 3-26; HB 4-6; HB 4-8,GROENKLOOF; HATFIELD,S2
+EFK320,Aldoel Bld 3-22; HB 3-23; HB 4-6,GROENKLOOF; HATFIELD,S1
+EHN410,Eng II 2-37; Eng II 4-38; Eng III - Electronic Lab B; Eng III - Net Lab C; Geography 1-11,HATFIELD,S1
+EIL420,IT 4-2,HATFIELD,S2
+EIR211,Centenary 2; Centenary 4; Eng II 4-39 CAEC Lab; Eng III - 1,HATFIELD,S1
+EIR221,Eng II 4-39 CAEC Lab; Eng III - 1; Eng III - 4; Eng III - 6,HATFIELD,S2
+EJJ210,Centenary 3; Eng III - Net Lab A; Eng III - Net Lab B; Eng III - Net Lab C; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+EKK320,Eng I M-Lab 2-24; Eng II 4-38,HATFIELD,S2
+EKK410,Eng I M-Lab 2-24; Eng II 4-36,HATFIELD,S1
+EKN110,IT 2-23; Roos hall; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S1
+EKN120,Centenary 1; Centenary 2; Centenary 3; Centenary 5; Centenary 6; Louw hall; Roos hall; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2; vd Bijl Hall,HATFIELD,S2
+EKN214,Louw hall; Thuto 1-2,HATFIELD,S1
+EKN224,EMS 4-152; IT 4-4,HATFIELD,S1
+EKN234,Centenary 2; EMS 4-152,HATFIELD,S2
+EKN244,EMS 4-150; EMS 4-151,HATFIELD,S2
+EKN310,Centenary 1; HB 4-2; IT 4-1,HATFIELD,S1
+EKN315,IT 2-25; IT 4-3,HATFIELD,S1
+EKN320,EMS 4-152; IT 4-1,HATFIELD,S2
+EKN325,IT 2-25; IT 4-3,HATFIELD,S2
+EKT723,Informatorium Red Lab,HATFIELD,S1
+ELH111,HB 4-1; HB 4-3; IT 4-4,HATFIELD,S1
+ELH131,HB 4-15,HATFIELD,S1
+ELH132,HB 4-15,HATFIELD,S2
+ELI220,Centenary 2; Eng III - 1; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C,HATFIELD,S2
+ELO320,Eng III - Electronic Lab A; vd Bijl Hall,HATFIELD,S2
+ELX311,Eng I M-Lab 2-24; Eng II 3-40; Eng III - 4,HATFIELD,S1
+EME310,Eng I 1-4; Eng II 4-39 CAEC Lab; Eng III - 2,HATFIELD,S1
+EMK310,Eng II 4-39 CAEC Lab; Eng III - 1; Eng III - 7; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C; Eng III - Net Lab A; Eng III - Net Lab B; Eng III - Net Lab C,HATFIELD,S1
+EMS310,Eng I 1-2; Eng I 1-3; Eng III - Electronic Lab A,HATFIELD,S1
+EMZ310,Eng I 1-1; Eng II 2-37; Eng II 4-38; Eng III - Electronic Lab B,HATFIELD,S1
+EMZ320,Eng I 1-1; Eng I 1-4; Eng III - Net Lab A; Eng III - Net Lab B; Eng III - Net Lab C,HATFIELD,S2
+ENE310,AE Annex; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C; Muller hall; North hall,HATFIELD,S1
+ENE410,Eng I 1-3; Eng I 1-4; Eng III - Electronic Lab A; Eng III - Electronic Lab C,HATFIELD,S1
+ENG110,Agric Annex 2-7; Agric Annex 2-9; Aldoel 2; Aldoel Bld 1-133; Aldoel Bld 2-42; Aldoel Bld 2-83/84; Aldoel Bld 2-89/90; Aldoel Bld 2-97; Aldoel Bld 3-12; Aldoel Bld 3-22; Aldoel Bld 3-25; Aldoel Bld 3-26; Aldoel Bld 3-27; HB 1-12; HB 1-4; HB 4-1; HB 4-12; HB 4-13; HB 4-14; HB 4-15; HB 4-16; HB 4-5; HB 4-6; HB 4-7; HB 4-8; HB 4-9; IT 2-24; IT 2-26; IT 4-2; IT 4-3; IT 4-5; Law building 1-31; Lecture Theatre L1; Lecture Theatre L4; Lecture Theatre L9; Theology 1-19; Theology 1-25; Theology 1-28; Theology 1-9; Thuto 1-1,GROENKLOOF; HATFIELD,S1
+ENG118,Roos hall; Thuto 1-1; Thuto 1-2,HATFIELD,S1
+ENG120,Aldoel 1; Aldoel Bld 1-133; Aldoel Bld 2-42; Aldoel Bld 2-83/84; Aldoel Bld 2-89/90; Aldoel Bld 2-97; Aldoel Bld 3-22; Aldoel Bld 3-25; Aldoel Bld 3-26; Aldoel Bld 3-27; HB 3-14; HB 3-15; HB 3-23; HB 3-24; HB 4-1; HB 4-12; HB 4-13; HB 4-14; HB 4-2; HB 4-3; HB 4-6; HB 4-7; HB 4-8; HB 4-9; IT 2-24; IT 2-25; IT 4-2; IT 4-4; Lecture Theatre L1; Lecture Theatre L2; Lecture Theatre L3; Lecture Theatre L4; Lecture Theatre L9; North hall; Roos hall; South hall; Theology 1-19; Theology 1-9; Theology 2-1; Thuto 3-1,GROENKLOOF; HATFIELD,S2
+ENG210,Aldoel 1; Thuto 1-1,GROENKLOOF; HATFIELD,S1
+ENG220,AE du Toit Auditorium; Aldoel 1; Large Chemistry Hall; Roos hall,GROENKLOOF; HATFIELD,S2
+ENG310,HB 4-1; HB 4-2; HB 4-3,HATFIELD,S1
+ENG320,HB 4-1; HB 4-3,HATFIELD,S2
+ENR420,Eng I 1-4; Eng II 3-40; Eng II 4-21; Eng II 4-36; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4; Informatorium Grey Lab,HATFIELD,Q1; Q3
+ENV101,Aldoel 1; Centenary 4; Centenary 5,GROENKLOOF; HATFIELD,S1
+ENV201,Large Chemistry Hall; Thuto 3-1,HATFIELD,S1
+ENV301,Consult Department; Geography 1-2,HATFIELD,S1
+EPE321,Eng I 1-4; Eng II 3-34; Eng III - Net Lab A; Eng III - Net Lab B; Eng III - Net Lab C,HATFIELD,S2
+EPR400,AE Annex,HATFIELD,Y
+EPR402,AE Annex,HATFIELD,Y
+EPY423,Eng III - 6,HATFIELD,S2
+ERD320,Eng III - Electronic Lab B; vd Bijl Hall,HATFIELD,S2
+ERF222,AE du Toit Auditorium; Law building 1-54; Roos hall; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+ERP420,Eng I 1-2; Eng I 1-3; Eng II 3-31; Eng II 4-38; Eng III - Net Lab A; Eng III - Net Lab B; Eng III - Net Lab C,HATFIELD,Q1; Q3
+ERS220,AE Annex; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C; vd Bijl Hall,HATFIELD,S2
+ESC320,Eng II 2-37; Eng II 3-31; Eng II 3-40; Eng II 4-21; Eng II 4-36; Eng III - Electronic Lab B; Eng III - Electronic Lab C,HATFIELD,S2
+ESP411,Eng III - 2; Eng III - Electronic Lab A; Eng III - Electronic Lab B; Eng III - Electronic Lab C,HATFIELD,S1
+ESS400,Roos hall,HATFIELD,Y
+EWE320,Eng III - Electronic Lab C; vd Bijl Hall,HATFIELD,S2
+FAR381,IT 4-5,HATFIELD,S1
+FAR382,IT 2-26,HATFIELD,S2
+FBS110,Muller hall; Te Water hall,HATFIELD,S1
+FBS112,IT 4-1; IT 4-5,HATFIELD,S1
+FBS121,Centenary 6; EMS 4-151,HATFIELD,S2
+FBS122,Louw hall; Muller hall,HATFIELD,S2
+FBS210,Centenary 2; Centenary 3; IT 2-23,HATFIELD,S1
+FBS212,Centenary 1; Centenary 5,HATFIELD,S1
+FBS220,Centenary 1; Centenary 2; Centenary 5; EMS 4-150; EMS 4-151,HATFIELD,S2
+FBS222,Centenary 2; Centenary 3; EMS 4-152,HATFIELD,S2
+FBS310,Centenary 2; Centenary 3; Centenary 4; IT 4-5,HATFIELD,S1
+FBS320,Centenary 1; Centenary 2; Centenary 3; Centenary 5; Centenary 6,HATFIELD,S2
+FBS361,Centenary 2; Centenary 6,HATFIELD,S2
+FCL301,Aldoel Bld 3-27,GROENKLOOF,Y
+FDM120,AE du Toit Auditorium; Centenary 4; Centenary 5,HATFIELD,S2
+FDM200,EMS 4-152,HATFIELD,Y
+FDM300,IT 4-5,HATFIELD,Y
+FDS101,Agric Annex 2-14,HATFIELD,S1
+FIL110,Louw hall,HATFIELD,S1
+FIL120,Thuto 1-2; Thuto 3-2,HATFIELD,S2
+FIL155,HB 4-2; HB 4-3,HATFIELD,S1
+FIL210,HB 4-15,HATFIELD,S1
+FIL220,HB 4-14,HATFIELD,S2
+FIL251,HB 4-1; IT 2-27,HATFIELD,Q1
+FIL252,HB 4-9,HATFIELD,Q2
+FIL310,HB 4-8,HATFIELD,S1
+FIL320,HB 3-14; HB 3-24,HATFIELD,S2
+FIN701,HB 4-12,HATFIELD,Y
+FIN702,HB 4-7,HATFIELD,Y
+FIN703,HB 4-12,HATFIELD,Y
+FIN704,HB 4-9,HATFIELD,Y
+FLG211,AE du Toit Auditorium; Thuto 1-2,HATFIELD,S1
+FLG212,AE du Toit Auditorium; Thuto 3-2,HATFIELD,S1
+FLG221,Large Chemistry Hall; Thuto 1-1,HATFIELD,S2
+FLG222,Louw hall,HATFIELD,S2
+FLG322,HB 3-14; HB 3-24,HATFIELD,S2
+FLG327,Centenary 2; EMS 4-152,HATFIELD,S1
+FLG330,Centenary 1; Centenary 2; Centenary 3,HATFIELD,S1
+FLG331,Centenary 1; EMS 4-152,HATFIELD,S2
+FLG332,Louw hall,HATFIELD,S2
+FMR121,Centenary 2; IT 2-23; Thuto 1-1; Thuto 1-2,HATFIELD,S2
+FRK111,Centenary 1; Centenary 2; Centenary 4; Louw hall; Roos hall; Thuto 1-2; Thuto 3-2,HATFIELD,S1
+FRK121,Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+FRK122,Centenary 1; Centenary 2; Centenary 3,HATFIELD,S2
+FRK133,EMS 4-151; EMS 4-152; HB 4-6; IT 2-24; IT 2-25; IT 2-27; IT 4-2; Informatorium Brown Lab; Informatorium Orange Lab; Informatorium Purple Lab,HATFIELD,S1
+FRK143,EMS 4-150; EMS 4-151; HB 3-23; IT 2-24; IT 2-26; IT 4-2; IT 4-3; Informatorium SIT 1 lab,HATFIELD,S2
+FRN104,HB 4-16,HATFIELD,Y
+FRN113,HB 1-9; HB 2-12,HATFIELD,S1
+FRN123,HB 1-9; HB 2-12,HATFIELD,S2
+FRN211,HB 2-12,HATFIELD,S1
+FRN221,HB 1-9; HB 2-12,HATFIELD,S2
+FRN361,HB 1-12,HATFIELD,S1
+FRN362,HB 1-12,HATFIELD,S1
+FRN363,HB 1-12; HB 2-12,HATFIELD,S2
+FRN364,HB 2-12,HATFIELD,S2
+FSG110,EMS 4-150,HATFIELD,S1
+FSG120,EMS 4-150,HATFIELD,S2
+FSK116,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; AE du Toit Auditorium; Thuto 1-2; Thuto 3-2,HATFIELD,S1
+FSK176,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; AE du Toit Auditorium,HATFIELD,S2
+FST250,HB 3-14; HB 4-5,HATFIELD,S1
+FST260,HB 4-5; HB 4-8,HATFIELD,S2
+FST350,Old Agric 2-35,HATFIELD,S2
+FST351,Old Agric 2-35,HATFIELD,S1
+FST352,Old Agric 2-35,HATFIELD,S1
+FST353,Old Agric 2-35,HATFIELD,S1
+FST360,Old Agric 2-35,HATFIELD,S2
+FST361,Old Agric 2-35,HATFIELD,S2
+FST362,Old Agric 2-35,HATFIELD,S1
+GES110,Agric Annex 2-14; Agric Annex 2-16; Aldoel 2; Aldoel Bld 2-95; Aldoel Bld 2-98; Aldoel Bld 3-20; Centenary 2; HB 1-15; HB 4-2,GROENKLOOF; HATFIELD,S1
+GES120,Aldoel 2; EMS 4-152; HB 4-2,GROENKLOOF; HATFIELD,S2
+GES210,Aldoel 1; HB 4-1; HB 4-3,GROENKLOOF; HATFIELD,S1
+GES220,Aldoel 2; EMS 4-151; IT 4-4,GROENKLOOF; HATFIELD,S2
+GES310,HB 4-14; HB 4-15; Lecture Theatre L2,GROENKLOOF; HATFIELD,S1
+GES320,HB 3-24; Lecture Theatre L2,GROENKLOOF; HATFIELD,S2
+GGY156,Aldoel 1; Centenary 2; Centenary 3,GROENKLOOF; HATFIELD,S1
+GGY166,IT 4-4,HATFIELD,S2
+GGY168,Thuto 3-1,HATFIELD,S2
+GGY201,Thuto 1-1; Thuto 1-2,HATFIELD,S2
+GGY252,Geography 2-15; HB 4-15,HATFIELD,S1
+GGY283,Geography 1-2; Informatorium Orange Lab,HATFIELD,S1
+GGY301,Geography 1-2,HATFIELD,S2
+GGY361,Geography 1-2; Geography 2-15,HATFIELD,S2
+GGY363,Geography 1-2,HATFIELD,S2
+GGY383,Agric Annex 2-18,HATFIELD,S1
+GHR420,Law building 1-31,HATFIELD,S2
+GIS220,Geography 1-2; Informatorium Purple Lab,HATFIELD,S2
+GIS221,AE Annex; AE du Toit Auditorium; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Geography 1-2; Informatorium Red Lab; Thuto 1-1,HATFIELD,S2
+GIS310,Geography 1-2; Informatorium Red Lab,HATFIELD,S1
+GIS311,Geography 2-3; Geography 2-9,HATFIELD,S1
+GIS320,Geography 1-2; Informatorium Maroon Lab,HATFIELD,S2
+GKD250,Consult Department; IT 4-4,HATFIELD,S1
+GKD320,Agric Annex 2-9; HB 4-16,HATFIELD,S2
+GKD350,HB 3-15,HATFIELD,S1
+GKD420,Agric Annex 2-18; Consult Department; IT 2-24,HATFIELD,S2
+GLY155,Consult Department; IT 4-1; IT 4-3,HATFIELD,S1
+GLY163,Consult Department; IT 2-25; IT 4-3,HATFIELD,S2
+GLY253,Agric Annex 2-9; IT 2-24; IT 2-25; IT 4-2,HATFIELD,S1
+GLY256,Consult Department; Eng II 2-27; Eng II 2-37,HATFIELD,S1
+GLY263,Agric Annex 2-18; IT 2-24; IT 4-3; Informatorium Green Lab,HATFIELD,S2
+GLY367,Consult Department,HATFIELD,S2
+GLY369,Agric Annex 2-7; Agric Annex 2-9; Informatorium Maroon Lab,HATFIELD,S2
+GLY370,Agric Annex 2-9,HATFIELD,S1
+GMA220,IT 2-24; IT 4-3; Scienza - Goldfields Lab 1,HATFIELD,S1
+GMA320,Agric Annex 2-9; Informatorium Red Lab,HATFIELD,S2
+GMC110,IT 2-26; IT 2-27; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Red Lab,HATFIELD,S2
+GMC310,Geography 1-11; Geography 2-3,HATFIELD,S1
+GMI210,Consult Department; Eng I 1-3,HATFIELD,S1
+GMT320,Geography 2-3,HATFIELD,S2
+GOA200,Centenary 5; Law building 1-54,HATFIELD,Y
+GOA300,IT 4-1; IT 4-5,HATFIELD,Y
+GPE301,Lecture Theatre L7,GROENKLOOF,S2
+GRG410,Law building 1-54,HATFIELD,S1
+GRK110,Theology 1-11,HATFIELD,S1
+GRK120,Theology 1-11,HATFIELD,S2
+GRK210,Theology 1-11,HATFIELD,S1
+GRK220,Theology 1-11,HATFIELD,S2
+GTS161,Roos hall; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+GTS251,Louw hall; Thuto 1-2; Thuto 3-1; vd Bijl Hall,HATFIELD,S1
+GTS261,Louw hall; Thuto 1-1; Thuto 3-1; vd Bijl Hall,HATFIELD,S2
+GTS351,Centenary 3; Louw hall; Te Water hall,HATFIELD,S1
+GTS354,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; EMS 4-152; Louw hall,HATFIELD,S2
+GTS367,HB 3-15; HB 3-23; IT 2-26,HATFIELD,S1
+GTS368,EMS 4-152; Louw hall; vd Bijl Hall,HATFIELD,S2
+HEB110,Theology 1-11; Theology 2-38,HATFIELD,S1
+HEB120,Theology 2-28; Theology 2-38,HATFIELD,S2
+HEB210,Theology 2-38,HATFIELD,S1
+HEB220,Theology 1-19; Theology 2-38,HATFIELD,S2
+HRC220,Centenary 2; vd Bijl Hall,HATFIELD,S2
+HSC351,Agric Science 5-11,HATFIELD,S1
+HSC420,Agric Science 5-11,HATFIELD,S2
+HSC490,Agric Science 5-11,HATFIELD,S1
+HSC780,Agric Science 5-11,HATFIELD,S2
+IAS111,Centenary 4; Centenary 6,HATFIELD,S1
+IAS121,Centenary 6; IT 4-5,HATFIELD,S2
+IAS211,Centenary 3; EMS 4-150,HATFIELD,S1
+IAS221,Centenary 3; Centenary 5; IT 2-26,HATFIELD,S2
+IAS282,IT 2-26; Te Water hall,HATFIELD,S2
+IAS353,IT 2-25,HATFIELD,S1
+IAS382,IT 2-25,HATFIELD,S2
+IAU200,Louw hall; Thuto 1-2; Thuto 3-1,HATFIELD,Y
+IAU300,Centenary 2; IT 4-5; vd Bijl Hall,HATFIELD,S1; S2; Y
+IAU701,HB 3-23,HATFIELD,Y
+IAU702,HB 4-12,HATFIELD,Y
+IAU703,HB 3-15,HATFIELD,Y
+IAU704,HB 3-15,HATFIELD,Y
+IGZ320,Thuto 1-1; Thuto 1-2,HATFIELD,S2
+IMY110,Informatorium SIT 1 lab,HATFIELD,S1
+IMY120,Informatorium Orange Lab,HATFIELD,S2
+IMY210,IT 4-2; Informatorium Yellow Lab,HATFIELD,S1
+IMY211,IT 2-25; Informatorium Yellow Lab,HATFIELD,S1
+IMY220,Informatorium Orange Lab,HATFIELD,S2
+IMY300,Informatorium Yellow Lab,HATFIELD,Y
+IMY310,IT 2-26; IT 4-5,HATFIELD,S1
+IMY320,IT 2-24; IT 4-3; Informatorium Purple Lab,HATFIELD,S2
+INF112,AE du Toit Auditorium; Centenary 2; Thuto 1-1; Thuto 1-2; Thuto 3-1,HATFIELD,S2
+INF113,IT 2-24,HATFIELD,S1
+INF154,IT 2-26; IT 4-4; Informatorium Red Lab,HATFIELD,S1
+INF164,EMS 4-152; IT 2-27; Informatorium Green Lab; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S2
+INF171,IT 2-23; IT 4-1,HATFIELD,Y
+INF214,IT 2-26; IT 2-27; Informatorium CBT Lab 1; Informatorium CBT Lab 2; Informatorium CBT Lab 3,HATFIELD,S1
+INF225,Centenary 1; IT 2-25; IT 4-2; IT 4-3,HATFIELD,S2
+INF261,IT 4-1; Informatorium Brown Lab; Informatorium SIT 1 lab,HATFIELD,S2
+INF264,IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab; Roos hall; Thuto 3-1,HATFIELD,S1
+INF271,IT 2-27; Informatorium Red Lab,HATFIELD,Y
+INF272,IT 4-4; Informatorium Brown Lab; Informatorium SIT 1 lab,HATFIELD,Y
+INF315,IT 4-5,HATFIELD,S1
+INF324,Roos hall,HATFIELD,S2
+INF354,Informatorium Brown Lab; Informatorium Grey Lab,HATFIELD,S1
+INF370,EMS 4-150,HATFIELD,Y
+INL110,Louw hall,HATFIELD,S1
+INL120,Centenary 3; Centenary 4; IT 2-23; Informatorium Brown Lab; Informatorium Grey Lab; Informatorium Red Lab,HATFIELD,S2
+INL130,IT 4-4,HATFIELD,S1
+INL140,IT 2-23; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab,HATFIELD,S2
+INL210,IT 2-26; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab,HATFIELD,S1
+INL220,EMS 4-151; IT 2-27; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3,HATFIELD,S2
+INL230,Centenary 5; EMS 4-150; EMS 4-151; IT 4-1,HATFIELD,S1
+INL240,IT 2-24; IT 2-26,HATFIELD,S1
+INL260,IT 2-24; IT 2-26; IT 4-2,HATFIELD,S2
+INL270,IT 4-4; Informatorium Green Lab; Informatorium Purple Lab; Informatorium Red Lab,HATFIELD,S2
+INL310,EMS 4-150; IT 2-26; Informatorium Blue Lab 2; Informatorium Blue Lab 3,HATFIELD,S1
+INL320,EMS 4-151; IT 2-26; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Orange Lab,HATFIELD,S2
+INL340,EMS 4-151; IT 2-27; Informatorium Brown Lab; Informatorium Grey Lab,HATFIELD,S2
+INL360,EMS 4-150; IT 2-27,HATFIELD,S1
+INL370,IT 2-27; IT 4-1,HATFIELD,Y
+INL380,IT 2-26; IT 2-27; IT 4-4; IT 4-5,HATFIELD,S2
+IPI410,Eng III - 1; Thuto 1-1; Thuto 3-1,HATFIELD,S1
+IPL210,HB 4-2,HATFIELD,S1
+IPL220,HB 4-2; IT 2-23,HATFIELD,S2
+IPL310,HB 4-2,HATFIELD,S1
+IPL320,Centenary 1; Centenary 3,HATFIELD,S2
+IPR410,Law building 1-31,HATFIELD,S1
+ISL420,Consult Department,HATFIELD,S2
+ISR310,Law building 1-54; Thuto 1-2; Thuto 3-1,HATFIELD,S1
+IVM210,IT 2-24; IT 4-2,HATFIELD,Y
+IVM220,IT 2-24; IT 4-2,HATFIELD,S2
+IVM310,HB 4-15,HATFIELD,S1
+IVM320,HB 4-15,HATFIELD,S2; Y
+JAF361,Aldoel Bld 2-97,GROENKLOOF,Q2
+JEN361,Aldoel Bld 3-12,GROENKLOOF,Q2
+JFP111,Aldoel Bld 1-143; Lecture Theatre L5,GROENKLOOF,S1
+JFP451,Aldoel Bld 3-26; Lecture Theatre L5,GROENKLOOF,Q1
+JFP471,Aldoel 2; Aldoel 3,GROENKLOOF,Q1
+JGI220,Aldoel Bld 1-82/IT-30 Lab; Aldoel Bld 1-84/IT-50 Lab; Lecture Theatre L1; Lecture Theatre L2,GROENKLOOF,S2
+JGL110,Lecture Theatre L9,GROENKLOOF,S2
+JGL111,Aldoel Bld 2-87/88,GROENKLOOF,S1
+JGL113,Aldoel Bld 1-133,GROENKLOOF,S2
+JGL121,Aldoel Bld 2-42,GROENKLOOF,S2
+JGL122,Lecture Theatre L3,GROENKLOOF,S2
+JGL123,Aldoel Bld 3-22,GROENKLOOF,S2
+JGL200,Lecture Theatre L5,GROENKLOOF,S1
+JGL213,Aldoel Bld 3-26,GROENKLOOF,S1
+JGL221,Aldoel Bld 3-22,GROENKLOOF,S1
+JGL222,Aldoel Bld 2-97,GROENKLOOF,S1
+JGL223,Aldoel Bld 2-89/90; Aldoel Bld 3-25,GROENKLOOF,S1
+JGL311,Lecture Theatre L4,GROENKLOOF,S1
+JGL313,Aldoel Bld 3-25,GROENKLOOF,S1
+JGL461,Aldoel Bld 2-97; Aldoel Bld 3-22; Aldoel Bld 3-25; Aldoel Bld 3-26,GROENKLOOF,Q1
+JGL464,Lecture Theatre L5,GROENKLOOF,Q4
+JGS121,Lecture Theatre L7,GROENKLOOF,S2
+JGS211,Lecture Theatre L7,GROENKLOOF,S1
+JGS212,Lecture Theatre L4; Lecture Theatre L9,GROENKLOOF,S1
+JGT210,Aldoel Bld 1-133,GROENKLOOF,S1
+JGV120,Aldoel Bld 2-87/88,GROENKLOOF,S2
+JGV210,Lecture Theatre L6,GROENKLOOF,S2
+JKG100,Aldoel Bld 2-97; Aldoel Bld 3-25,GROENKLOOF,Q1; Q4
+JKG200,Aldoel Bld 1-132,GROENKLOOF,Q2; Q4
+JKG300,Aldoel Bld 1-132,GROENKLOOF,Q3; Q4
+JKU101,Aldoel Bld 1-131,GROENKLOOF,Y
+JKU201,Aldoel Bld 1-131,GROENKLOOF,Y
+JKU301,Aldoel Bld 1-131; Aldoel Bld 1-145,GROENKLOOF,Y
+JLD220,Aldoel Bld 3-22; Lecture Theatre L5; Lecture Theatre L6,GROENKLOOF,S2
+JLD221,Aldoel 1,GROENKLOOF,S2
+JLD302,Lecture Theatre L9,GROENKLOOF,Y
+JLD320,Aldoel Bld 3-22; Lecture Theatre L5,GROENKLOOF,S2
+JLD400,Aldoel Bld 2-87/88; Aldoel Bld 3-26; Lecture Theatre L2; Lecture Theatre L3,GROENKLOOF,Q1; Q4
+JLE181,Lecture Theatre L7,GROENKLOOF,S2
+JLK110,Lecture Theatre L9; Music 3-18,GROENKLOOF,S1
+JLK120,Lecture Theatre L7; Lecture Theatre L9,GROENKLOOF,S2
+JLK121,Aldoel Bld 3-27,GROENKLOOF,S2
+JLO110,Aldoel 3,GROENKLOOF,S1
+JLO120,Lecture Theatre L7,GROENKLOOF,S2
+JLO210,Lecture Theatre L6,GROENKLOOF,S1
+JLO220,Lecture Theatre L5,GROENKLOOF,S2
+JLO310,Lecture Theatre L1,GROENKLOOF,S1
+JLO320,Lecture Theatre L1,GROENKLOOF,S2
+JLP110,Aldoel Bld 2-87/88,GROENKLOOF,S1
+JLP220,Lecture Theatre L5; Lecture Theatre L7,GROENKLOOF,S2
+JLS310,NS Lab H,GROENKLOOF,S1
+JLT330,Aldoel 1; Aldoel Bld 1-82/IT-30 Lab; Aldoel Bld 1-84/IT-50 Lab,GROENKLOOF,S1
+JLW312,Aldoel Bld 1-84/IT-50 Lab,GROENKLOOF,S1
+JLZ110,Aldoel 2; Aldoel 3; Aldoel Bld 2-42; HB 4-13; HB 4-8; Lecture Theatre L5; Lecture Theatre L6; Lecture Theatre L7,GROENKLOOF; HATFIELD,S1
+JLZ120,Aldoel 1; Aldoel 2; Aldoel 3; Aldoel Bld 2-42; HB 4-14; Lecture Theatre L5; Lecture Theatre L7,GROENKLOOF; HATFIELD,S2
+JLZ300,Aldoel 2; HB 1-12; Lecture Theatre L6; Lecture Theatre L7; Lecture Theatre L9,GROENKLOOF; HATFIELD,S1; S2
+JMA200,Aldoel Bld 3-22,GROENKLOOF,Y
+JMA300,Aldoel Bld 2-42; Aldoel Bld 3-25,GROENKLOOF,S1
+JMA451,Aldoel Bld 2-42,GROENKLOOF,Q1
+JMA454,Aldoel Bld 3-22; Aldoel Bld 3-26,GROENKLOOF,Q4
+JMB112,Aldoel 1; Aldoel 3,GROENKLOOF,S1
+JMB113,Sport Centre,GROENKLOOF,S1
+JMB114,Aldoel 1; Aldoel 3,GROENKLOOF,S1
+JMB122,Lecture Theatre L5,GROENKLOOF,S2
+JMB123,Sport Centre,GROENKLOOF,S2
+JMB124,Lecture Theatre L5; Lecture Theatre L6,GROENKLOOF,S1
+JMB125,Lecture Theatre L5,GROENKLOOF,S2
+JMB212,Lecture Theatre L6,GROENKLOOF,S1
+JMB213,Grk Sport Centre,GROENKLOOF,S1
+JMB222,Lecture Theatre L6; Lecture Theatre L7,GROENKLOOF,S2
+JMB223,Grk Sport Centre,GROENKLOOF,S2
+JMB312,Grk Sport Centre 2-22,GROENKLOOF,S1
+JMB313,Grk Sport Centre,GROENKLOOF,S1
+JMB322,Grk Sport Centre 2-22,GROENKLOOF,S2
+JMB323,Grk Sport Centre,GROENKLOOF,S2
+JMC201,Technica 1-18,GROENKLOOF,Y
+JMC330,Aldoel Bld 2-97,GROENKLOOF,S2
+JMC451,Aldoel Bld 2-81,GROENKLOOF,Q1
+JMC454,Aldoel Bld 2-81,GROENKLOOF,Q4
+JMD201,Aldoel Bld 1-133,GROENKLOOF,Y
+JMD203,Aldoel Bld 2-97,GROENKLOOF,Y
+JMD205,Lecture Theatre L5,GROENKLOOF,Y
+JMD206,Aldoel 2; Aldoel 3,GROENKLOOF,S1; S2
+JMD301,Aldoel Bld 2-42,GROENKLOOF,S1
+JMD303,Lecture Theatre L1,GROENKLOOF,S2
+JMD305,Lecture Theatre L6,GROENKLOOF,S2
+JMD306,Lecture Theatre L7,GROENKLOOF,S1
+JMD351,Aldoel Bld 1-133; Lecture Theatre L4,GROENKLOOF,S1
+JMD451,Aldoel Bld 3-26; Aldoel Bld 3-27,GROENKLOOF,Q1
+JMD453,Aldoel Bld 3-22; Aldoel Bld 3-25,GROENKLOOF,Q1
+JMD455,Lecture Theatre L4,GROENKLOOF,Q1
+JMD456,Aldoel Bld 3-12; Lecture Theatre L9,GROENKLOOF,Q1
+JMD461,Aldoel Bld 1-133,GROENKLOOF,Q4
+JMD463,Aldoel Bld 3-26; Aldoel Bld 3-27,GROENKLOOF,Q4
+JMD465,Lecture Theatre L4; Lecture Theatre L6,GROENKLOOF,Q4
+JMD466,Lecture Theatre L9,GROENKLOOF,Q4
+JME200,Aldoel 1,GROENKLOOF,Y
+JME210,Aldoel 3,GROENKLOOF,S1
+JME300,Aldoel 2,GROENKLOOF,S2
+JME451,Aldoel 2; Aldoel 3,GROENKLOOF,Q1
+JME454,Aldoel 3,GROENKLOOF,Q4
+JMF200,Aldoel Bld 3-22,GROENKLOOF,Y
+JMF300,Aldoel Bld 3-22,GROENKLOOF,S1
+JMF451,Aldoel Bld 3-22,GROENKLOOF,Q1
+JMF454,Aldoel Bld 3-22,GROENKLOOF,Q4
+JMG200,Aldoel 2; Aldoel 3,GROENKLOOF,S1; S2
+JMG300,Aldoel 2,GROENKLOOF,S1
+JMG451,Aldoel 2; Lecture Theatre L5,GROENKLOOF,Q1
+JMG454,Lecture Theatre L5; Lecture Theatre L6; Lecture Theatre L7,GROENKLOOF,Q4
+JMH200,Aldoel 1; Aldoel 3,GROENKLOOF,S1; S2
+JMH300,Aldoel 2,GROENKLOOF,S1
+JMH451,Lecture Theatre L7,GROENKLOOF,Q1
+JMH454,Lecture Theatre L5,GROENKLOOF,Q4
+JMK201,Aldoel Bld 1-132,GROENKLOOF,Y
+JMK301,Aldoel Bld 1-132,GROENKLOOF,S1
+JMK451,Aldoel Bld 1-145,GROENKLOOF,Q1
+JMK454,Aldoel Bld 1-145,GROENKLOOF,Q4
+JML201,Lecture Theatre L6,GROENKLOOF,Y
+JML301,Lecture Theatre L5,GROENKLOOF,S2
+JML461,Aldoel Bld 3-12,GROENKLOOF,Q1
+JML464,Aldoel Bld 3-12,GROENKLOOF,Q4
+JMM200,Music 3-18,GROENKLOOF,Y
+JMM300,Music 3-23,GROENKLOOF,S1
+JMM451,Music 3-23,GROENKLOOF,Q1
+JMM454,Music 3-18,GROENKLOOF,Q4
+JMN203,Lecture Theatre L7,GROENKLOOF,Y
+JMN304,Lecture Theatre L9,GROENKLOOF,S1
+JMN308,NS Lab H,GROENKLOOF,S2
+JMN309,NS Lab D,GROENKLOOF,S2
+JMN451,Aldoel Bld 3-12,GROENKLOOF,Q1
+JMN452,Consult Department,GROENKLOOF,Q1
+JMN453,NS Lab D,GROENKLOOF,Q1
+JMN454,NS Lab F,GROENKLOOF,Q4
+JMN456,NS Lab C; NS Lab D,GROENKLOOF,Q4
+JMN458,Consult Department,GROENKLOOF,Q4
+JMO181,Music 3-18,GROENKLOOF,Y
+JMO182,Music 3-18,GROENKLOOF,Y
+JMO201,Music 3-18,GROENKLOOF,Y
+JMO202,Music 3-18,GROENKLOOF,Y
+JMO203,Music 3-18,GROENKLOOF,Y
+JMO204,Music 3-18,GROENKLOOF,Y
+JMT304,Technica 1-18,GROENKLOOF,S1
+JMT451,Technica 1-18,GROENKLOOF,Q1
+JMT454,Aldoel Bld 3-26; Aldoel Bld 3-27,GROENKLOOF,Q4
+JMW204,Lecture Theatre L4,GROENKLOOF,S1; S2
+JMW300,NS Lab E,GROENKLOOF,S1
+JMW302,Aldoel Bld 3-26,GROENKLOOF,S2
+JMW303,NS Lab B,GROENKLOOF,S2
+JMW451,NS Lab E,GROENKLOOF,Q1
+JMW452,Aldoel Bld 2-97,GROENKLOOF,Q1
+JMW453,Aldoel Bld 2-97,GROENKLOOF,Q1
+JMW454,NS Lab E,GROENKLOOF,Q4
+JMW455,Aldoel Bld 2-97,GROENKLOOF,Q4
+JMW456,Consult Department,GROENKLOOF,Q4
+JND200,Aldoel Bld 1-133,GROENKLOOF,Y
+JND300,Aldoel Bld 1-133,GROENKLOOF,S2
+JND451,Aldoel Bld 2-87/88,GROENKLOOF,Q1
+JND454,Aldoel Bld 1-133,GROENKLOOF,Q4
+JNM461,Aldoel 3,GROENKLOOF,Q1
+JNM464,Aldoel 1; Aldoel 2; Aldoel 3,GROENKLOOF,Q4
+JOT110,Aldoel Bld 2-81; Technica 1-18,GROENKLOOF,S1
+JOT120,Aldoel Bld 2-81,GROENKLOOF,S2
+JOT210,Aldoel Bld 2-81,GROENKLOOF,S1
+JOT220,Aldoel Bld 2-81,GROENKLOOF,S2
+JOT240,Lecture Theatre L7,GROENKLOOF,S2
+JPC310,NS Lab D,GROENKLOOF,S2
+JPO110,Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+JPO111,Eng II 3-31; Eng II 3-34; Eng II 4-21; Eng II 4-30; North hall,HATFIELD,S1
+JPO112,Eng II 3-40; Eng II 4-21; Eng II 4-36; Eng III - 4,HATFIELD,S1
+JPO113,Eng I 1-1; Eng I 1-2; Eng II 2-36; Eng II 3-34,HATFIELD,S1
+JPO114,Eng II 3-25; Eng NS2 Comp Lab 3,HATFIELD,S1
+JPO116,Eng II 4-36; Eng III - 1; Eng III - 3; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2,HATFIELD,S1
+JPO120,Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S2
+JPO121,Eng II 3-25; Eng II 4-21,HATFIELD,S2
+JPO122,Eng II 3-31; Eng II 3-34; Eng III - 3; Eng III - 5; Muller hall,HATFIELD,S2
+JPO123,Eng II 3-31; Eng II 3-34; Eng II 4-36; Eng III - 6,HATFIELD,S2
+JPO124,Eng I 1-3; Eng NS2 Comp Lab 3,HATFIELD,S2
+JPO125,Eng I 1-3; Eng II 4-21; Eng II 4-30; Eng II 4-38; Eng III - 3; Eng III - 4,HATFIELD,S2
+JPO126,Eng II 3-31; Eng II 4-21; Eng II 4-30; Eng II 4-36; Eng III - 1; Eng III - 3; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2,HATFIELD,S2
+JPO152,Eng I 1-2; Eng I 1-4; Eng II 4-21; Eng II 4-30; Eng II 4-36; Eng III - 6,HATFIELD,S1
+JPO161,Eng II 3-34; Eng II 4-21; Eng II 4-38,HATFIELD,S2
+JPS121,Aldoel 1; Aldoel 2; Aldoel 3; HB 4-9,GROENKLOOF; HATFIELD,S2
+JSP200,Lecture Theatre L5,GROENKLOOF,Y
+JSP300,Aldoel Bld 2-83/84,GROENKLOOF,S1
+JSP451,Aldoel Bld 2-83/84,GROENKLOOF,Q1
+JSP454,Aldoel Bld 2-83/84,GROENKLOOF,Q4
+JST320,Lecture Theatre L4; Lecture Theatre L9,GROENKLOOF,S1
+JSU110,Eng III - 7,HATFIELD,S1
+JSU120,Eng III - 7,HATFIELD,S2
+JSW200,Lecture Theatre L9,GROENKLOOF,Y
+JSW300,Aldoel Bld 2-83/84,GROENKLOOF,S2
+JSW451,Aldoel Bld 2-83/84,GROENKLOOF,Q1
+JSW454,Aldoel Bld 3-12,GROENKLOOF,Q4
+JTT110,Technica 1-18,GROENKLOOF,S1
+JTT120,Technica 1-18,GROENKLOOF,S2
+JTT230,Aldoel Bld 1-84/IT-50 Lab; Technica 1-18,GROENKLOOF,S1
+JTT240,Technica 1-18,GROENKLOOF,S2
+JTT330,Aldoel Building IT-32 AIM Lab; Technica 1-18,GROENKLOOF,S1
+JTT340,Technica 1-18,GROENKLOOF,S2
+JUR110,EMS 4-150; IT 2-23; IT 2-26; IT 4-4; Thuto 1-1; Thuto 3-2,HATFIELD,S1
+JUR120,HB 4-1; HB 4-12; HB 4-13; Thuto 1-1; Thuto 3-1,HATFIELD,S2
+JUR310,Centenary 6; Louw hall,HATFIELD,S1
+JUR420,Law building 1-31,HATFIELD,S2
+JVB210,Aldoel Bld 2-42; Aldoel Bld 3-22,GROENKLOOF,S1
+JVB220,Aldoel Bld 1-133,GROENKLOOF,S2
+JVK130,Lecture Theatre L5; Lecture Theatre L6,GROENKLOOF,S1
+JVK300,Lecture Theatre L9,GROENKLOOF,S2
+JVK400,Aldoel Bld 2-87/88,GROENKLOOF,Q1; Q4
+JWG311,Lecture Theatre L3,GROENKLOOF,S1
+JWG321,Aldoel Bld 3-25,GROENKLOOF,S2
+JWI181,Lecture Theatre L7,GROENKLOOF,S1
+JWI311,NS Lab A,GROENKLOOF,S1
+JWI321,NS Lab A,GROENKLOOF,S2
+JWT115,Lecture Theatre L5; Lecture Theatre L6,GROENKLOOF,S1
+JWT125,Lecture Theatre L4; NS Lab B; NS Lab D,GROENKLOOF,S2
+JWT230,Lecture Theatre L6,GROENKLOOF,S1
+JWT315,Aldoel Bld 3-12,GROENKLOOF,S1
+JWT325,Lecture Theatre L4; Lecture Theatre L5; Lecture Theatre L6,GROENKLOOF,S2
+JZL200,Lecture Theatre L5,GROENKLOOF,Y
+JZL300,Lecture Theatre L9,GROENKLOOF,S1
+JZL451,Aldoel Bld 3-12,GROENKLOOF,Q1
+JZL454,Aldoel Bld 3-12,GROENKLOOF,Q4
+KID410,Law building 1-54,HATFIELD,S1
+KLR221,Informatorium Maroon Lab,HATFIELD,S2
+KOB182,Thuto 1-1; Thuto 3-1,HATFIELD,S1
+KOB184,Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,Q4
+KOB281,Roos hall; Thuto 1-2; Thuto 3-2,HATFIELD,Q1
+KOB283,IT 2-24; IT 4-2,HATFIELD,Q3
+KRG110,Centenary 1; IT 2-23,HATFIELD,S1
+KRG120,Centenary 3; Centenary 4,HATFIELD,S2
+KRG201,AE du Toit Auditorium; Thuto 3-1,HATFIELD,Y
+KRM110,Thuto 1-1; Thuto 3-2,HATFIELD,S1
+KRM120,Thuto 3-1,HATFIELD,S2
+KRM210,Thuto 1-1,HATFIELD,S1
+KRM220,Roos hall,HATFIELD,S2
+KRM310,Louw hall,HATFIELD,S1
+KRM320,Louw hall; Thuto 3-1,HATFIELD,S2
+KRM701,HB 3-24; HB 4-5; HB 4-9,HATFIELD,S1; S2; Y
+KTH220,AE du Toit Auditorium; Centenary 4; Centenary 6; IT 2-23; Thuto 1-1,HATFIELD,S2
+KTR211,Thuto 3-1; Thuto 3-2,HATFIELD,S1
+KUB420,IT 2-24,HATFIELD,S2
+KUB780,IT 2-24,HATFIELD,S2
+KVK420,Agric Annex 2-18,HATFIELD,S2
+LAT110,HB 1-12,HATFIELD,S1
+LAT120,HB 1-6,HATFIELD,S2
+LBF410,IT 2-24,HATFIELD,S1
+LEK210,HB 3-15; HB 3-23,HATFIELD,S1
+LEK220,IT 4-2,HATFIELD,S2
+LEK310,Agric Annex 2-9,HATFIELD,S2
+LEK315,Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S1
+LEK320,IT 4-3; Informatorium Green Lab,HATFIELD,S1
+LEK324,IT 2-24,HATFIELD,S2
+LEK331,Agric Annex 2-9; Informatorium Brown Lab,HATFIELD,S1
+LEK332,Agric Annex 2-9; Consult Department,HATFIELD,S2
+LEK415,Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S1
+LEK424,IT 2-24,HATFIELD,S2
+LEK431,Agric Annex 2-9; Informatorium Brown Lab,HATFIELD,S1
+LEK432,Agric Annex 2-9; Consult Department,HATFIELD,S2
+LEK464,Consult Department,HATFIELD,S1
+LEK465,HB 4-6; HB 4-7,HATFIELD,S1
+LEK713,Consult Department,HATFIELD,S1
+LEK782,HB 4-6; HB 4-7,HATFIELD,S1
+LFT420,Agric Annex 2-18,HATFIELD,S2
+LKM450,Agric Science 5-11,HATFIELD,S1
+LKM750,Agric Science 5-11,HATFIELD,S1
+LST110,HB 3-15; HB 4-12; HB 4-13; HB 4-14; HB 4-15; HB 4-6; HB 4-7; HB 4-8; HB 4-9; IT 2-25; Theology 1-9,HATFIELD,S1
+LST133,HB 3-23; HB 4-1; HB 4-3; HB 4-9; IT 2-27; IT 4-5,HATFIELD,S1
+LST143,Centenary 6; HB 3-15; HB 4-1; HB 4-13; HB 4-14; Muller hall,HATFIELD,S2
+MBB410,AE Annex; Eng III - 1; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S2
+MBY161,AE du Toit Auditorium; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+MBY251,Biolab A; Biolab B; Louw hall,HATFIELD,S1
+MBY261,Biolab A; Biolab B; Centenary 4,HATFIELD,S2
+MBY262,Biolab A; Biolab B; Biolab C; IT 2-24; IT 4-2,HATFIELD,S2
+MBY351,Biolab A; Biolab B; HB 4-12,HATFIELD,S1
+MBY355,Biolab A; Biolab B; Biolab D; IT 2-24; IT 4-2,HATFIELD,S1
+MBY364,Biolab A; Biolab B; Biolab D; HB 4-12,HATFIELD,S2
+MBY365,Biolab A; Biolab B; Biolab D; IT 2-24,HATFIELD,S2
+MDR420,North hall,HATFIELD,S2
+MGC110,AE du Toit Auditorium; Eng III - 1; Eng III - 6; Eng III - 7,HATFIELD,S1
+MGS100,Consult Department,HATFIELD,Y
+MGS200,Consult Department,HATFIELD,Y
+MGS300,Consult Department,HATFIELD,Y
+MGW112,Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S1
+MHM420,Eng II 3-40,HATFIELD,S2
+MIA320,AE Annex; AE du Toit Auditorium; Eng III - 1; Louw hall,HATFIELD,S2
+MII420,Eng II 4-30; Eng II 4-36,HATFIELD,S2
+MJJ210,AE Annex; Eng III - 7,HATFIELD,S1
+MKI420,Eng II 3-25; Eng II 3-34,HATFIELD,S2
+MKM321,AE Annex; Eng III - 7; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab,HATFIELD,S2
+MKM411,Eng III - 6; Eng III - 7,HATFIELD,S1
+MLB111,AE du Toit Auditorium; Centenary 3; Centenary 4; Centenary 6; EMS 4-150; EMS 4-151; EMS 4-152; HB 4-3; Thuto 1-1; Thuto 1-2,HATFIELD,S1
+MLV420,Eng II 3-34,HATFIELD,S2
+MOO420,Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S2
+MOW217,Eng II 2-36; Eng III - 7; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Orange Lab; Large Chemistry Hall,HATFIELD,S1
+MOW227,Eng III - 1; Eng III - 7,HATFIELD,S2
+MOW312,Eng III - 6; Eng III - 7,HATFIELD,S1
+MOW323,Eng III - 7; Louw hall,HATFIELD,S2
+MOX410,Eng III - 2,HATFIELD,S1
+MPR213,Centenary 1; Centenary 5; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4; vd Bijl Hall,HATFIELD,S1
+MRG410,Law building 1-31,HATFIELD,S2
+MSD210,AE Annex; Eng III - 6; Thuto 3-1; vd Bijl Hall,HATFIELD,S1
+MSY310,AE Annex; Eng III - 6; Eng III - 7; vd Bijl Hall,HATFIELD,S1
+MTL180,Large Chemistry Hall; Louw hall; Roos hall; Thuto 3-2,HATFIELD,S1
+MTV310,AE Annex,HATFIELD,S1
+MTV410,Eng III - 1; Eng III - 2; Eng III - 5,HATFIELD,S1
+MTV420,Eng III - 6; HB 4-2,HATFIELD,S2
+MTX221,Eng III - 5; Eng III - 6,HATFIELD,S2
+MTX311,Eng III - 6; vd Bijl Hall,HATFIELD,S1
+MVE420,Eng I 1-1,HATFIELD,S2
+MVR320,Eng III - 1; Eng III - 6; Eng III - 7,HATFIELD,S2
+MVS311,Eng III - 2; Eng III - 5,HATFIELD,S1
+MWP161,HB 1-10; HB 1-6; HB 1-7; HB 4-15; IT 4-2; IT 4-3; North hall; South hall; Theology 1-28,HATFIELD,S1; S2
+MWP261,HB 1-4; HB 3-14; HB 3-24; HB 4-13; HB 4-14; HB 4-5; HB 4-7,HATFIELD,S1; S2
+MWP361,HB 1-12; HB 1-4; HB 1-6; HB 1-7; HB 3-14; HB 3-24; HB 4-5,HATFIELD,S1; S2
+MWP400,Eng I 1-7; Eng I 1-8; Eng I 1-9; HB 1-12; HB 1-6; HB 1-7; HB 3-24; HB 4-13; HB 4-5; IT 4-2,HATFIELD,S1; S2
+MWT110,Louw hall; Roos hall,HATFIELD,S1
+MWT120,Centenary 2; Centenary 4,HATFIELD,S2
+MWT210,HB 4-13,HATFIELD,S1
+MWT220,HB 4-14,HATFIELD,S2
+MWT311,HB 4-14,HATFIELD,S1
+MWT321,HB 4-7,HATFIELD,S2
+MWT452,HB 4-7,HATFIELD,S2
+MWT454,HB 4-7,HATFIELD,S1
+MWT455,HB 4-14; HB 4-7,HATFIELD,Y
+NDE110,Aldoel Bld 2-97; HB 4-6,GROENKLOOF; HATFIELD,S1
+NDE210,Aldoel Bld 2-97; HB 1-6,GROENKLOOF; HATFIELD,S1
+NDE310,Aldoel Bld 2-97; HB 4-5,GROENKLOOF; HATFIELD,S1
+NHM322,Eng II 2-37; Eng II 3-25; Eng II 3-31,HATFIELD,S2
+NHM412,Eng II 3-25; Eng II 3-31,HATFIELD,S1
+NJJ210,Eng I 1-2; Eng I 1-3,HATFIELD,S1
+NKR410,Eng II 3-25; Eng II 3-31,HATFIELD,S1
+NMC113,Eng III - 1; Eng III - 2; Eng III - 6; Large Chemistry Hall; Muller hall; NS2 4-1,HATFIELD,S1
+NMC123,AE du Toit Auditorium; Eng I 1-1; Eng III - 1; Eng III - 2; Eng III - 6; Eng III - 7; NS2 4-1; Roos hall,HATFIELD,S2
+NMC223,Eng I 1-2; Mineral Sciences 4-2/5,HATFIELD,S2
+NMC313,Consult Department; Eng II 3-25; Eng II 4-30,HATFIELD,S1
+NMM320,Eng I 1-2; Eng I 1-3; Eng II 3-31; Mineral Sciences 4-2/5,HATFIELD,S2
+NMP310,Consult Department; Eng II 3-31,HATFIELD,S1
+NMP411,Eng II 3-25; Eng II 3-31; Eng NS2 Comp Lab 2,HATFIELD,S1
+NOP421,Consult Department,HATFIELD,S2
+NPB312,Eng II 4-30; Eng II 4-36; Informatorium Green Lab,HATFIELD,S1
+NPM321,Eng I 1-2; Eng I 1-3; Informatorium Blue Lab 1,HATFIELD,S2
+NPT220,Eng I 1-2,HATFIELD,S2
+NPW411,Consult Department; Eng II 3-25; Eng II 3-31,HATFIELD,S1
+NSC400,Eng II 3-25,HATFIELD,Y
+NTC210,Eng II 3-25,HATFIELD,S1
+NTL110,Theology 1-25,HATFIELD,S1
+NTL111,Theology 1-25,HATFIELD,S1
+NTL112,Theology 2-28,HATFIELD,S1
+NTL120,Theology 1-25,HATFIELD,S2
+NTL121,Theology 1-25,HATFIELD,S2
+NTL122,Theology 1-25,HATFIELD,S2
+NTL210,Theology 1-9,HATFIELD,S1
+NTL211,Theology 1-9,HATFIELD,S1
+NTL212,Theology 1-25,HATFIELD,S1
+NTL220,Theology 1-9,HATFIELD,S2
+NTL221,Theology 1-9,HATFIELD,S2
+NTL222,Theology 1-9,HATFIELD,S2
+NTL310,Theology 1-19,HATFIELD,S1
+NTL311,Theology 1-19,HATFIELD,S1
+NTL312,Theology 1-19,HATFIELD,S1
+NTL320,Theology 1-19,HATFIELD,S2
+NTL321,Theology 1-19,HATFIELD,S2
+NTL322,Theology 1-19,HATFIELD,S2
+NTL412,Theology 2-28,HATFIELD,S1
+NTV310,AE Annex,HATFIELD,Q1; S1
+NVM321,Eng II 3-25; Eng II 3-31,HATFIELD,S2
+OBS114,Centenary 2; Centenary 3; Centenary 4; HB 4-2; IT 2-23; IT 4-1; IT 4-5; vd Bijl Hall,HATFIELD,S1
+OBS124,Centenary 1; Centenary 2; Centenary 3; Centenary 4; Centenary 5; EMS 4-152; HB 4-2; IT 4-1; IT 4-5; South hall,HATFIELD,S2
+OBS133,EMS 4-151; EMS 4-152; HB 3-14; HB 3-15; HB 4-7; IT 2-27; IT 4-2,HATFIELD,S1
+OBS143,EMS 4-151; HB 3-23; HB 4-13; HB 4-15; HB 4-9; IT 2-26; IT 4-4,HATFIELD,S2
+OBS210,Centenary 3; Centenary 4; Centenary 5; Centenary 6; EMS 4-152,HATFIELD,S1
+OBS211,IT 2-23; IT 2-26; IT 4-1; IT 4-4; IT 4-5,HATFIELD,S1
+OBS212,Centenary 3; EMS 4-150; EMS 4-151,HATFIELD,S2
+OBS214,Large Chemistry Hall; Thuto 1-2,HATFIELD,S1
+OBS216,HB 4-1; HB 4-3,HATFIELD,S1
+OBS220,Centenary 1; IT 2-23; IT 4-1,HATFIELD,S2
+OBS226,EMS 4-151; HB 4-1; IT 2-26,HATFIELD,S2
+OBS310,Centenary 2; Centenary 6; EMS 4-152,HATFIELD,S1
+OBS316,EMS 4-150; EMS 4-151,HATFIELD,S1
+OBS326,HB 3-15; IT 4-3,HATFIELD,S2
+OBS330,Centenary 1; Centenary 2; Centenary 5; Centenary 6; vd Bijl Hall,HATFIELD,S2
+OBS359,Louw hall; Thuto 1-1,HATFIELD,S1
+OBS370,Large Chemistry Hall; Louw hall,HATFIELD,S2
+OBS371,EMS 4-150,HATFIELD,S2
+ODR320,Centenary 2; vd Bijl Hall,HATFIELD,S2
+OKW413,Agric Science 5-11,HATFIELD,S2
+OMR410,HB 4-6,HATFIELD,S2
+ONR420,Law building 1-54,HATFIELD,S1
+OPB210,HB 4-1; IT 2-26; IT 4-4,HATFIELD,S1
+OPV112,Aldoel 1; Aldoel 2; Aldoel 3; HB 4-1; HB 4-3; IT 2-27; IT 4-4; Lecture Theatre L2,GROENKLOOF; HATFIELD,S1
+OPV122,Aldoel 1; Aldoel 3; Aldoel Bld 2-42; HB 4-1; IT 4-4; Lecture Theatre L5,GROENKLOOF; HATFIELD,S2
+OPV212,Aldoel 1; Aldoel 2; Aldoel 3; Centenary 1; Centenary 2; Lecture Theatre L1,GROENKLOOF; HATFIELD,S1
+OPV222,Aldoel 1; Centenary 1; Centenary 3; Lecture Theatre L2,GROENKLOOF; HATFIELD,S2
+OPV312,Aldoel 1; Aldoel 3; EMS 4-150; HB 4-1; Lecture Theatre L1,GROENKLOOF; HATFIELD,S1
+OPV322,Aldoel 1; Aldoel 2; Aldoel 3; EMS 4-150; IT 2-26; IT 2-27; Lecture Theatre L3,GROENKLOOF; HATFIELD,S2
+OTL110,Theology 1-25,HATFIELD,S1
+OTL111,Theology 1-25,HATFIELD,S1
+OTL112,Theology 2-28,HATFIELD,S1
+OTL120,Theology 1-25,HATFIELD,S2
+OTL121,Theology 1-25,HATFIELD,S2
+OTL122,Theology 1-25,HATFIELD,S2
+OTL210,Theology 2-1,HATFIELD,S1
+OTL211,Theology 2-1,HATFIELD,S1
+OTL212,Theology 2-1,HATFIELD,S1
+OTL220,Theology 1-9,HATFIELD,S2
+OTL221,Theology 1-9,HATFIELD,S2
+OTL222,Theology 1-9,HATFIELD,S2
+OTL310,Theology 1-19,HATFIELD,S1
+OTL311,Theology 1-19,HATFIELD,S1
+OTL312,Theology 1-19,HATFIELD,S1
+OTL320,Theology 1-19,HATFIELD,S2
+OTL321,Theology 1-19,HATFIELD,S2
+OTL322,Theology 1-19,HATFIELD,S2
+OTL412,Theology 2-28,HATFIELD,S1
+PAD112,Centenary 4; Centenary 5,HATFIELD,S1
+PAD122,Centenary 1; Centenary 2; Centenary 3,HATFIELD,S2
+PAD212,HB 4-3; IT 2-26; IT 4-4,HATFIELD,S1
+PAD222,EMS 4-150,HATFIELD,S2
+PAD312,Centenary 4; IT 2-27; IT 4-5,HATFIELD,S1
+PAD322,EMS 4-150; EMS 4-151,HATFIELD,S2
+PBL210,Law building 1-54; Thuto 3-1,HATFIELD,S1
+PBL220,Large Chemistry Hall; North hall; Thuto 1-2,HATFIELD,S2
+PBL310,Thuto 1-1; Thuto 3-2,HATFIELD,S1
+PBL320,Thuto 1-1; Thuto 1-2,HATFIELD,S2
+PBL410,Large Chemistry Hall,HATFIELD,S1
+PBL420,Thuto 1-1; Thuto 3-1,HATFIELD,S2
+PEE321,Eng II 3-31; Eng II 4-30,HATFIELD,S2
+PEE410,Eng II 3-31; Eng II 4-21,HATFIELD,S1
+PEL310,Lecture Theatre L4; Lecture Theatre L9,GROENKLOOF,Y
+PGW350,Agric Annex 2-7; IT 4-2,HATFIELD,S1
+PGW400,Agric Science 5-11,HATFIELD,Y
+PGW702,Agric Science 5-11,HATFIELD,Y
+PHY114,AE Annex; AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14,HATFIELD,S1
+PHY124,AE Annex; AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14,HATFIELD,S2
+PHY131,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 4-9; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; AE du Toit Auditorium; Thuto 1-1,HATFIELD,S1
+PHY137,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; Centenary 1; IT 4-1,HATFIELD,S1
+PHY147,AE Annex Tutorial  Lab 4-9; AE Annex Tutorial Lab 4-1; AE Annex Tutorial Lab 4-12; AE Annex Tutorial Lab 4-13; AE Annex Tutorial Lab 5-1; AE Annex Tutorial Lab 5-10; AE Annex Tutorial Lab 5-13; AE Annex Tutorial Lab 5-14; IT 2-23; IT 4-5,HATFIELD,S2
+PHY210,NS1 5-42,HATFIELD,S2
+PHY255,NS1 5-42,HATFIELD,S1
+PHY263,NS1 5-42,HATFIELD,S2
+PHY300,NS1 5-31,HATFIELD,S1
+PHY310,NS1 5-31,HATFIELD,S2
+PHY353,NS1 5-31,HATFIELD,S1
+PHY356,NS1 5-31,HATFIELD,S1
+PHY363,NS1 5-31,HATFIELD,S2
+PHY364,NS1 5-31,HATFIELD,S2
+PJJ210,Eng I 1-2; Eng I 1-3,HATFIELD,S1
+PLG251,Agric Annex 2-7; Biolab C; Zoology 2-11,HATFIELD,S1
+PLG262,IT 2-24; IT 2-25; Plant Science complex 2-10,HATFIELD,S2
+PLG351,Plant Science Auditorium 3-50; Plant Science complex 2-10,HATFIELD,S1
+PLG363,Agric Annex 2-7; Biolab C,HATFIELD,S2
+PLG463,Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S2
+PLG483,Consult Department,HATFIELD,S1
+PLG490,Agric Annex 2-18; IT 4-2,HATFIELD,S1
+PLG786,Agric Annex 2-18; IT 4-2,HATFIELD,S1
+PMW410,Eng II 3-31,HATFIELD,S1
+PMY121,Eng II 4-30,HATFIELD,S2
+PMY220,Eng II 3-31,HATFIELD,S2
+PMY311,Eng II 3-31; Eng II 4-30,HATFIELD,S1
+PMY320,Eng II 4-30,HATFIELD,S2
+PMY410,Eng I 1-3; Eng II 3-31,HATFIELD,S1
+PMY423,Eng II 4-30,HATFIELD,S2
+PMZ422,Eng II 4-36,HATFIELD,S2
+PPF301,Lecture Theatre L7,GROENKLOOF,S1
+PPK251,HB 4-7; IT 2-24,HATFIELD,S2
+PPR712,Agric Science 5-11,HATFIELD,S2
+PRO280,ONLINE,GROENKLOOF,Q3
+PRO380,ONLINE,GROENKLOOF,Q4
+PRO452,ONLINE,GROENKLOOF,Q1
+PRO453,ONLINE,GROENKLOOF,Q2
+PRR400,Centenary 5; Law building 1-54,HATFIELD,S1; S2
+PRT110,Theology 1-25,HATFIELD,S1
+PRT111,Theology 1-25,HATFIELD,S1
+PRT112,Theology 1-25,HATFIELD,S1
+PRT210,Theology 2-1,HATFIELD,S1
+PRT211,Theology 2-1,HATFIELD,S1
+PRT212,Theology 2-1,HATFIELD,S1
+PRT220,Theology 2-1,HATFIELD,S2
+PRT221,Theology 2-1,HATFIELD,S2
+PRT222,Theology 2-1,HATFIELD,S2
+PRT310,Theology 1-19,HATFIELD,S1
+PRT311,Theology 1-19,HATFIELD,S1
+PRT312,Theology 1-19,HATFIELD,S1
+PRT320,Theology 1-19,HATFIELD,S2
+PRT321,Theology 1-19,HATFIELD,S2
+PRT322,Theology 1-19,HATFIELD,S2
+PRT422,Theology 2-38,HATFIELD,S2
+PRX321,Eng II 3-25,HATFIELD,S2
+PSC321,Eng II 3-25,HATFIELD,S2
+PSC411,Eng II 4-36,HATFIELD,Y
+PSR110,Roos hall; Thuto 1-1; Thuto 1-2,HATFIELD,S1
+PSZ310,Eng II 3-25; Eng II 4-30,HATFIELD,S2
+PSZ410,Eng II 3-31,HATFIELD,S1
+PTG101,HB 1-10,HATFIELD,Y
+PTG113,Consult Department,HATFIELD,S1
+PTG123,Consult Department,HATFIELD,S2
+PTG211,Consult Department; HB 1-6; HB 1-7,HATFIELD,S1
+PTG221,HB 1-10; HB 1-6,HATFIELD,S2
+PTG311,HB 1-12,HATFIELD,S1
+PTG321,HB 1-12,HATFIELD,S2
+PTO101,Roos hall; Thuto 3-2,HATFIELD,Y
+PUB110,HB 3-24; HB 4-8,HATFIELD,S1
+PUB120,HB 4-15; HB 4-16; HB 4-5,HATFIELD,S2
+PUB210,HB 3-14; HB 4-8; Informatorium CBT Lab 2; Informatorium CBT Lab 3; Informatorium Yellow Lab,HATFIELD,S1
+PUB220,EMS 4-151; HB 4-3; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Purple Lab; Informatorium Yellow Lab,HATFIELD,S2
+PUB310,HB 3-14; HB 4-16; HB 4-5; Informatorium Green Lab,HATFIELD,S1
+PUB311,HB 3-14; IT 2-24,HATFIELD,S1
+PUB320,HB 4-7,HATFIELD,S2
+PUB321,HB 1-6,HATFIELD,S2
+PUF110,Centenary 2; Centenary 3,HATFIELD,S1
+PUR420,IT 2-25,HATFIELD,S2
+PVK420,Agric Annex 2-18,HATFIELD,S1
+PVR420,Thuto 1-2,HATFIELD,S2
+REL110,Aldoel Bld 3-22; IT 2-26; Te Water hall,GROENKLOOF; HATFIELD,S1
+REL120,Aldoel Bld 2-97; HB 4-1; HB 4-3,GROENKLOOF; HATFIELD,S2
+REL210,Aldoel Bld 2-42; HB 3-15,GROENKLOOF; HATFIELD,S1
+REL220,Aldoel Bld 3-25; HB 3-24,GROENKLOOF; HATFIELD,S2
+REL221,HB 1-7,HATFIELD,S2
+REL310,Aldoel Bld 3-22; HB 4-6,GROENKLOOF; HATFIELD,S1
+REL320,Aldoel Bld 3-25; HB 1-12,GROENKLOOF; HATFIELD,S2
+REL410,Theology 2-28,HATFIELD,S1
+REL420,Theology 1-11,HATFIELD,S2
+RES320,Centenary 3,HATFIELD,S2
+RHP320,Thuto 3-2,HATFIELD,S2
+ROM120,Centenary 1; Centenary 2; Centenary 4; Thuto 3-1,HATFIELD,S2
+RPK210,AE du Toit Auditorium,HATFIELD,S1
+RPK220,AE du Toit Auditorium,HATFIELD,S2
+RPL310,Agric Annex 2-7,HATFIELD,S1
+RPL320,Agric Annex 2-7; IT 4-2,HATFIELD,S2
+RPR210,Thuto 1-1; Thuto 1-2,HATFIELD,S1
+RPR410,Law building 1-31,HATFIELD,S2
+RRP100,Centenary 5; Centenary 6; HB 4-2,HATFIELD,Y
+RRP200,Centenary 2; Centenary 4; Centenary 5,HATFIELD,Y
+RRP300,IT 4-1; IT 4-5,HATFIELD,Y
+RSM120,Theology 1-25,HATFIELD,S2
+RSM121,Theology 1-25,HATFIELD,S2
+RSM122,Theology 1-25,HATFIELD,S2
+RSM210,Theology 2-1,HATFIELD,S1
+RSM211,Theology 2-1,HATFIELD,S1
+RSM212,Theology 2-1,HATFIELD,S1
+RSM220,Theology 2-1,HATFIELD,S2
+RSM221,Theology 2-1,HATFIELD,S2
+RSM222,Theology 2-1,HATFIELD,S2
+RSM310,Theology 1-19,HATFIELD,S1
+RSM311,Theology 1-19,HATFIELD,S1
+RSM312,Theology 1-19,HATFIELD,S1
+RSM320,Theology 1-19,HATFIELD,S2
+RSM321,Theology 1-19,HATFIELD,S2
+RSM322,Theology 1-19,HATFIELD,S2
+RSM422,Theology 2-38,HATFIELD,S2
+RVW210,Law building 1-54; Thuto 1-1; Thuto 1-2,HATFIELD,S1
+SAR310,Thuto 1-2; Thuto 3-1,HATFIELD,S1
+SBM321,Consult Department; Eng III - 3; Eng III - 4,HATFIELD,S2
+SBT111,Agric Annex 2-18,HATFIELD,S1
+SBT122,Agric Annex 2-7,HATFIELD,S2
+SBT211,Agric Annex 2-7,HATFIELD,S1
+SBT222,Agric Annex 2-7,HATFIELD,S2
+SBT311,Agric Annex 2-9,HATFIELD,S1
+SBT322,Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S2
+SBZ321,Eng II 2-36; Eng III - 2; Eng III - 3,HATFIELD,S1
+SBZ420,Eng III - 2,HATFIELD,S2
+SCA420,Eng III - 2; Eng III - 3,HATFIELD,S2
+SCI154,IT 4-4,HATFIELD,S1
+SCL420,HB 3-24,HATFIELD,S2
+SDO420,Eng III - 2; Eng III - 3; Eng III - 5,HATFIELD,S2
+SEP110,HB 4-13,HATFIELD,S1
+SEP111,Aldoel 2; Aldoel 3; HB 4-5,GROENKLOOF; HATFIELD,S1
+SEP120,HB 4-16,HATFIELD,S2
+SEP210,HB 1-12,HATFIELD,S1
+SEP211,HB 4-8; Lecture Theatre L5,GROENKLOOF; HATFIELD,S1
+SEP220,HB 1-6,HATFIELD,S2
+SEP310,Aldoel Bld 3-22; HB 4-5,GROENKLOOF; HATFIELD,S1
+SEV421,Eng II 3-40,HATFIELD,S2
+SGM221,Eng I 1-1; Eng I 1-4,HATFIELD,S2
+SGM311,AE Annex; Eng II 4-38; Eng III - 2,HATFIELD,S1
+SGM323,AE Annex; Eng III - 2; Eng III - 3,HATFIELD,S2
+SGR410,Law building 1-31,HATFIELD,S1
+SHC310,Eng II 3-40; Eng III - 3; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+SHC321,Eng II 4-38; Eng III - 2; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4; HB 3-15,HATFIELD,S2
+SHC410,Eng III - 3; Eng III - 4; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2; Eng NS2 Comp Lab 3; Eng NS2 Comp Lab 4,HATFIELD,S1
+SHT110,Theology 1-25,HATFIELD,S1
+SHT111,Theology 1-25,HATFIELD,S1
+SHT112,Theology 1-25,HATFIELD,S1
+SHT120,Theology 1-25,HATFIELD,S2
+SHT121,Theology 1-25,HATFIELD,S2
+SHT122,Theology 1-25,HATFIELD,S2
+SHT210,Theology 2-1,HATFIELD,S1
+SHT211,Theology 2-1,HATFIELD,S1
+SHT212,Theology 2-1,HATFIELD,S1
+SHT220,Theology 2-1,HATFIELD,S2
+SHT221,Theology 2-1,HATFIELD,S2
+SHT222,Theology 2-1,HATFIELD,S2
+SHT223,Theology 2-1,HATFIELD,S2
+SHT224,Theology 2-1,HATFIELD,S2
+SHT225,Theology 2-1,HATFIELD,S2
+SHT310,Theology 1-19,HATFIELD,S1
+SHT311,Theology 1-19,HATFIELD,S1
+SHT312,Theology 1-19,HATFIELD,S1
+SHT313,Theology 1-19,HATFIELD,S1
+SHT314,Theology 1-19,HATFIELD,S1
+SHT315,Theology 1-19,HATFIELD,S1
+SHT320,Theology 1-19,HATFIELD,S2
+SHT321,Theology 1-19,HATFIELD,S2
+SHT322,Theology 1-19,HATFIELD,S2
+SHT412,Theology 2-28,HATFIELD,S1
+SIB310,Eng I 1-4,HATFIELD,S1
+SIE310,Eng I 1-4; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2,HATFIELD,S1
+SIN223,Eng I 1-4,HATFIELD,S2
+SIN311,Eng III - 3; Eng III - 5,HATFIELD,S1
+SIN323,Eng II 2-37; Eng II 3-40; Eng III - 3,HATFIELD,S2
+SIN324,Eng III - 2,HATFIELD,S2
+SIN411,Eng III - 5,HATFIELD,S1
+SIN413,AE Annex; Eng III - 5,HATFIELD,S1
+SIP412,AE du Toit Auditorium,HATFIELD,S1
+SIP421,Thuto 3-1,HATFIELD,S2
+SJJ310,Eng II 3-40,HATFIELD,S1
+SLK110,Large Chemistry Hall; Lecture Theatre L2; Roos hall; Thuto 1-2,GROENKLOOF; HATFIELD,S1
+SLK120,HB 4-2; Lecture Theatre L1; Lecture Theatre L3; Roos hall; Thuto 1-2; Thuto 3-2,GROENKLOOF; HATFIELD,S2
+SLK210,AE du Toit Auditorium; Thuto 3-1; Thuto 3-2,HATFIELD,S1
+SLK220,Roos hall; Thuto 1-1; Thuto 1-2,HATFIELD,S2
+SLK310,Thuto 1-1,HATFIELD,S1
+SLK320,Thuto 1-2,HATFIELD,S2
+SMI410,HB 4-9,HATFIELD,S1
+SOC110,HB 4-2; Thuto 1-1; Thuto 3-1,HATFIELD,S1
+SOC120,EMS 4-150; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+SOC210,HB 4-2,HATFIELD,S1
+SOC211,HB 4-15,HATFIELD,S1
+SOC220,Centenary 5; HB 4-2,HATFIELD,S2
+SOC221,HB 3-15,HATFIELD,S2
+SOC310,HB 4-1,HATFIELD,S1
+SOC321,HB 4-1; HB 4-3,HATFIELD,S2
+SOC751,Informatorium Maroon Lab,HATFIELD,Q2
+SOR420,Law building 1-31,HATFIELD,S2
+SPH311,Aldoel Bld 3-27,GROENKLOOF,S1
+SPN101,HB 1-4,HATFIELD,S1
+SPN102,HB 1-4,HATFIELD,S2
+SPN211,HB 3-14; HB 3-24; HB 4-14,HATFIELD,S1
+SPN221,HB 3-14; HB 3-24; HB 4-14,HATFIELD,S2
+SPN311,HB 4-21,HATFIELD,S1
+SPN321,HB 4-21,HATFIELD,S2
+SPR411,Thuto 3-1,HATFIELD,S1
+SPR421,Large Chemistry Hall,HATFIELD,S2
+SRY110,Theology 2-38,HATFIELD,S1
+SRY120,Theology 2-38,HATFIELD,S2
+SRY210,Theology 2-38,HATFIELD,S1
+SRY220,Theology 1-28,HATFIELD,S2
+SRY310,Theology 2-38,HATFIELD,S1
+SRY320,Theology 2-38,HATFIELD,S2
+SSC412,Consult Department; Eng III - 5,HATFIELD,S1
+STC122,IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab; Thuto 1-1; Thuto 1-2; Thuto 3-2,HATFIELD,S2
+STC137,Centenary 1; EMS 4-150; EMS 4-152; HB 4-1; IT 2-26,HATFIELD,S1
+STC147,Centenary 6; EMS 4-152; HB 4-1; IT 4-5,HATFIELD,S2
+STK110,AE du Toit Auditorium; IT 2-23; IT 4-1; Informatorium Brown Lab; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab; Large Chemistry Hall; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S1
+STK113,Informatorium Brown Lab; Informatorium Green Lab; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab; Thuto 1-1,HATFIELD,S1
+STK120,Informatorium Brown Lab; Informatorium Orange Lab; Informatorium Red Lab; Informatorium SIT 1 lab; Thuto 1-1; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S1; S2
+STK121,Informatorium Orange Lab; Informatorium Red Lab; Informatorium SIT 1 lab; Thuto 1-1; Thuto 1-2; Thuto 3-2,HATFIELD,S1
+STK123,Centenary 4; Centenary 5; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Grey Lab; Informatorium Maroon Lab; Informatorium Orange Lab; Thuto 1-2; Thuto 3-1; Thuto 3-2,HATFIELD,S2
+STK133,EMS 4-151; HB 3-15; HB 4-14; IT 2-24; IT 2-27; IT 4-3; Informatorium Purple Lab; Informatorium SIT 1 lab; Louw hall,HATFIELD,S1
+STK143,HB 3-24; HB 4-2; HB 4-3; HB 4-6; HB 4-9; IT 2-24; IT 4-4; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S2
+STK210,IT 2-23; IT 4-1; Informatorium Grey Lab; Informatorium Orange Lab; Informatorium Purple Lab,HATFIELD,S1
+STK220,EMS 4-152; IT 2-23; Informatorium SIT 1 lab,HATFIELD,S2
+STK310,IT 2-24; IT 4-2; IT 4-3; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab; Informatorium Red Lab,HATFIELD,S1
+STK320,Centenary 2; IT 2-27; IT 4-1; Informatorium Brown Lab; Informatorium Grey Lab; Informatorium Orange Lab,HATFIELD,S2
+STK353,AE du Toit Auditorium; Centenary 2; Centenary 3; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab; Informatorium Grey Lab; Informatorium Maroon Lab; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S2
+STL210,HB 4-3,HATFIELD,S1
+STL220,HB 4-1,HATFIELD,S2
+STL310,IT 2-27,HATFIELD,S1
+STL320,HB 4-1; HB 4-3,HATFIELD,S2
+STW110,HB 3-24,HATFIELD,S1
+STW111,HB 4-16; HB 4-7; Lecture Theatre L4,GROENKLOOF; HATFIELD,S1
+STW120,HB 1-10,HATFIELD,S2
+STW210,HB 1-10,HATFIELD,Y
+STW211,Aldoel Bld 3-25; Aldoel Bld 3-26; HB 4-3; HB 4-9,GROENKLOOF; HATFIELD,Y
+STW220,HB 1-10,HATFIELD,S2
+STW310,Aldoel Bld 1-133; HB 1-10,GROENKLOOF; HATFIELD,Y
+SUR220,Eng III - 2; Geography 2-9,HATFIELD,S2
+SVC323,Eng I 1-1,HATFIELD,S2
+SVC412,Eng III - 4; Eng NS2 Comp Lab 1; Eng NS2 Comp Lab 2,HATFIELD,S1
+SWK122,Eng III - 1; Eng III - 2; Eng III - 3; Eng III - 4; Eng III - 5; Eng III - 6; Eng III - 7; Roos hall; Thuto 1-1; Thuto 1-2; Thuto 3-2,HATFIELD,S2
+SWK210,Eng III - 3,HATFIELD,S1
+SWK211,Eng III - 2; Eng III - 3; Eng III - 7,HATFIELD,S1
+TBE741,Informatorium Orange Lab,HATFIELD,S2
+TBR420,IT 4-3,HATFIELD,S2
+TBS410,IT 2-26,HATFIELD,S1
+TLR320,Agric Annex 2-18; IT 4-2,HATFIELD,S2
+TLR411,Agric Annex 2-18,HATFIELD,S1
+TNT111,IT 4-3,HATFIELD,S1
+TNT122,IT 4-3,HATFIELD,S2
+TNT211,Agric Annex 2-9,HATFIELD,S1
+TNT222,Agric Annex 2-9,HATFIELD,S2
+TNT311,Agric Annex 2-7,HATFIELD,S1
+TNT322,Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S2
+TXA201,Centenary 2; vd Bijl Hall,HATFIELD,S1; S2
+TXA301,IT 4-1,HATFIELD,Y
+VBB220,EMS 4-152; Law building 1-54; Roos hall; Thuto 3-1; vd Bijl Hall,HATFIELD,S2
+VES310,Aldoel Bld 2-87/88,GROENKLOOF,Q1; Q4
+VGE310,Agric Annex 2-9,HATFIELD,S1
+VGE320,Agric Annex 2-18; Agric Annex 2-7; Agric Annex 2-9,HATFIELD,S2
+VGE411,Agric Annex 2-18,HATFIELD,S2
+VHD320,Centenary 3; Centenary 4; Thuto 1-2; Thuto 3-2,HATFIELD,S2
+VHL100,Aldoel Bld 1-132; Aldoel Bld 3-25,GROENKLOOF,Q1; Q2; Q3
+VIO102,Consult Department; Visual arts 3-1,HATFIELD,Y
+VIO202,Consult Department; Visual arts 3-1,HATFIELD,Y
+VKK111,vd Bijl Hall,HATFIELD,S1
+VKK121,HB 4-1,HATFIELD,S2
+VKK211,HB 4-1,HATFIELD,S1
+VKK221,HB 4-1; HB 4-3,HATFIELD,S2
+VKK311,IT 2-25,HATFIELD,S1
+VKK321,IT 2-25; IT 4-3,HATFIELD,S2
+VKU250,IT 4-3,HATFIELD,S1
+VKU260,IT 4-3,HATFIELD,S2
+VKU400,Agric Annex 2-7; IT 2-25,HATFIELD,Y
+VPL101,EMS 4-150,HATFIELD,Y
+WDE310,Agric Annex 2-18; IT 4-3,HATFIELD,S1
+WDE320,IT 2-24; IT 2-25; IT 4-2,HATFIELD,S2
+WDE450,Agric Annex 2-18,HATFIELD,S1
+WKD155,Geography 2-9,HATFIELD,S1
+WKD254,Geography 2-3,HATFIELD,S2
+WKD261,Geography 1-11; Geography 1-2,HATFIELD,S2
+WKD263,Geography 1-11; Informatorium Maroon Lab,HATFIELD,S1
+WKD265,Geography 1-11,HATFIELD,S2
+WKD315,Geography 1-11,HATFIELD,S1
+WKD316,Geography 1-11,HATFIELD,S1
+WKD370,Geography 1-11,HATFIELD,S2
+WRG110,IT 4-2; IT 4-3,HATFIELD,S1
+WRG120,IT 4-3,HATFIELD,S2
+WST111,EMS 4-152; IT 2-23; IT 4-5; Informatorium Brown Lab; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab; Informatorium SIT 1 lab; Large Chemistry Hall; Louw hall; Roos hall; Thuto 1-2; vd Bijl Hall,HATFIELD,S1
+WST121,IT 2-23; IT 2-26; IT 4-4; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Brown Lab; Informatorium Red Lab,HATFIELD,S2
+WST211,IT 2-23; IT 4-4; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab,HATFIELD,S1
+WST212,IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab; Louw hall; Thuto 1-1; Thuto 1-2,HATFIELD,S1
+WST221,IT 2-23; IT 4-4; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab,HATFIELD,S2
+WST311,IT 2-23; Informatorium Blue Lab 1; Informatorium Blue Lab 2; Informatorium Blue Lab 3; Informatorium Red Lab; Informatorium SIT 1 lab,HATFIELD,S1
+WST312,EMS 4-151; Informatorium SIT 1 lab,HATFIELD,S1
+WST321,Centenary 2; IT 4-1; IT Open Bronze Lab; IT Open Copper Lab; IT Open Gold Lab; IT Open Silver Lab,HATFIELD,S2
+WST322,IT 2-26; IT 4-4; Informatorium Orange Lab; Informatorium Purple Lab; Informatorium Red Lab,HATFIELD,S2
+WTW114,Centenary 1; Centenary 4; Centenary 6; EMS 4-150; EMS 4-151; HB 4-1; HB 4-2; HB 4-3; Muller hall; North hall; South hall; Te Water hall; Theology 1-9; vd Bijl Hall,HATFIELD,S1
+WTW115,HB 4-1; HB 4-3; IT 4-4; Mathematics 2-1; Muller hall,HATFIELD,S1
+WTW123,EMS 4-150; Scienza - Goldfields Lab 1,HATFIELD,S2
+WTW124,EMS 4-150; HB 4-1; HB 4-12; HB 4-3; HB 4-9; Muller hall; Te Water hall; Theology 1-19; Theology 1-25; Theology 1-9,HATFIELD,S2
+WTW133,Consult Department; Lecture Theatre L1; Lecture Theatre L2,GROENKLOOF,S1
+WTW134,Centenary 1; Centenary 2; Centenary 3; Centenary 5; Centenary 6; EMS 4-150; HB 4-1; HB 4-3; IT 2-26; Large Chemistry Hall; Muller hall; Te Water hall; Thuto 1-1; Thuto 3-1; Thuto 3-2,HATFIELD,S1
+WTW137,EMS 4-150; EMS 4-151; HB 4-1; HB 4-3; HB 4-9; IT 2-23; IT 2-27,HATFIELD,S1
+WTW144,Lecture Theatre L2; Lecture Theatre L3,GROENKLOOF,S2
+WTW146,AE du Toit Auditorium; Roos hall; Te Water hall; vd Bijl Hall,HATFIELD,S2
+WTW147,Botany 2-26; EMS 4-150; HB 4-3; IT 2-24; IT 2-25; IT 2-27; IT 4-2; IT 4-3,HATFIELD,S2
+WTW148,Centenary 1; Centenary 2; Centenary 3; IT 2-26; IT 2-27; Louw hall,HATFIELD,S2
+WTW152,Centenary 5; IT 2-23; Scienza - Goldfields Lab 1,HATFIELD,S1
+WTW153,HB 3-23; HB 4-8,HATFIELD,S1
+WTW158,Eng III - 1; Eng III - 3; Eng III - 4; Eng III - 5; Eng III - 6; Eng III - 7; HB 4-2; Large Chemistry Hall; Louw hall; North hall; South hall,HATFIELD,S1
+WTW162,EMS 4-150; EMS 4-151,HATFIELD,S2
+WTW164,AE Annex; Centenary 1; Centenary 3; Eng II 3-40; Eng II 4-38; Eng III - 1; Eng III - 2; Eng III - 3; Eng III - 4; Eng III - 5; Eng III - 6; Eng III - 7; Louw hall; vd Bijl Hall,HATFIELD,S2
+WTW165,HB 3-15; HB 3-23; Large Chemistry Hall; Roos hall; Theology 1-9,HATFIELD,S2
+WTW211,Mathematics 2-1; Te Water hall,HATFIELD,S1
+WTW218,Botany 2-23; Mathematics 2-1,HATFIELD,S1
+WTW220,EMS 4-151; HB 4-3; IT 2-26; Muller hall,HATFIELD,S2
+WTW221,HB 3-15; HB 4-9; Mathematics 2-1,HATFIELD,S2
+WTW224,Mathematics 2-1,HATFIELD,S2
+WTW238,AE Annex; Eng I 1-1; Eng I 1-2; Eng I 1-3; Eng I 1-4; Eng II 2-27; Eng II 2-36; Eng II 2-37; Eng II 3-40; Eng II 4-38; Eng III - 3; Eng III - 4; Eng III - 5; HB 4-1; Te Water hall,HATFIELD,S2
+WTW248,Mathematics 2-1,HATFIELD,S2
+WTW256,AE Annex; Botany 2-26; Eng I 1-1; Eng I 1-4; Eng II 2-27; Eng II 2-36; Eng II 2-37; Eng II 3-40; Eng II 4-38; Eng III - 6; HB 4-1; Te Water hall; Theology 2-1,HATFIELD,S1
+WTW258,AE Annex; Botany 2-26; Eng I 1-1; Eng I 1-4; Eng II 2-27; Eng II 2-36; Eng II 2-37; Eng II 3-40; Eng II 4-38; Eng III - 3; Eng III - 4; Eng III - 5; Te Water hall; Theology 2-1,HATFIELD,S1
+WTW263,AE Annex; Eng I 1-4; Eng II 2-27; Eng II 2-37; Eng II 3-40; Eng II 4-38; Eng III - 3; Eng III - 4; Eng III - 5; HB 4-12; HB 4-9; Te Water hall,HATFIELD,S2
+WTW264,EMS 4-150; EMS 4-151; Theology 1-19; Theology 1-9,HATFIELD,S2
+WTW285,EMS 4-152; HB 4-1; HB 4-3; IT 2-26,HATFIELD,S2
+WTW286,Mathematics 2-1,HATFIELD,S1
+WTW310,Mathematics 1-1; Mathematics 1-8,HATFIELD,S1
+WTW320,Mathematics 1-8,HATFIELD,S2
+WTW354,EMS 4-150; EMS 4-151; HB 3-23,HATFIELD,S1
+WTW364,Mathematics 2-1; Muller hall; Theology 2-1,HATFIELD,S2
+WTW381,Mathematics 2-1,HATFIELD,S1
+WTW382,Mathematics 2-1,HATFIELD,S1
+WTW383,Mathematics 2-1; Scienza - Goldfields Lab 1,HATFIELD,S2
+WTW386,Mathematics 2-1,HATFIELD,S1
+WTW387,Botany 2-26; Mathematics 2-1,HATFIELD,S2
+WTW389,Mathematics 1-1,HATFIELD,S2
+ZEN161,Large Chemistry Hall; Zoology 2-4,HATFIELD,S2
+ZEN251,Zoology 2-11; Zoology 2-4,HATFIELD,S1
+ZEN261,Zoology 2-11; Zoology 3-5,HATFIELD,S2
+ZEN351,Zoology 2-11; Zoology 3-19,HATFIELD,S1
+ZEN352,Zoology 2-11; Zoology 3-5,HATFIELD,S1
+ZEN353,Zoology 2-11; Zoology 2-18,HATFIELD,S2
+ZEN354,Zoology 2-11; Zoology 2-18,HATFIELD,S1
+ZEN355,Zoology 2-11; Zoology 3-1,HATFIELD,S1
+ZEN361,Zoology 2-11; Zoology 2-18,HATFIELD,S2
+ZEN362,Zoology 2-11; Zoology 3-19,HATFIELD,S2
+ZEN363,Zoology 2-11; Zoology 3-5,HATFIELD,S2
+ZEN364,Zoology 2-11; Zoology 3-5,HATFIELD,S1
+ZEN365,Zoology 2-11; Zoology 3-1,HATFIELD,S2
+ZUL110,HB 4-9,HATFIELD,S1
+ZUL111,HB 3-14; HB 3-24; Lecture Theatre L6,GROENKLOOF; HATFIELD,S1
+ZUL120,HB 3-15; HB 4-6,HATFIELD,S2
+ZUL210,HB 3-14; HB 4-6,HATFIELD,S1
+ZUL211,HB 1-7; Lecture Theatre L6,GROENKLOOF; HATFIELD,S1
+ZUL220,HB 4-16; HB 4-5,HATFIELD,S2
+ZUL310,Aldoel Bld 3-25; HB 3-14; HB 4-5; HB 4-7,GROENKLOOF; HATFIELD,S1
