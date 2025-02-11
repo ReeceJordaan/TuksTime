@@ -1,3 +1,5 @@
+// day_card.dart
+
 import 'package:flutter/material.dart';
 import 'package:tukstime/data/lecture_data.dart';
 
@@ -99,7 +101,9 @@ class _DayCardState extends State<DayCard> {
             height: (slotHeight * span) + 8 * (span - 1),
             margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
             decoration: BoxDecoration(
-              color: Colors.lightBlueAccent.withOpacity(0.3),
+              color: lecture.hasClash
+                  ? Colors.red.withOpacity(0.4)
+                  : Colors.lightBlueAccent.withOpacity(0.3),
               borderRadius: BorderRadius.circular(8.0),
             ),
             child: Center(

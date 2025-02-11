@@ -1,3 +1,5 @@
+// generate_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -269,35 +271,78 @@ class _GenerateScreenState extends State<GenerateScreen>
     List<LectureData> lectures = await _loadLecturesCsv();
     List<String> selectedModules = _customModules.map((m) => m.module).toList();
 
-    // Determine valid offerings based on the period.
-    List<String> validOfferings;
-    if (period == "S1") {
-      validOfferings = ["S1", "Y"];
-    } else if (period == "S2") {
-      validOfferings = ["S2", "Y"];
-    } else if (period == "Q1") {
-      validOfferings = ["Q1", "S1", "Y"];
-    } else if (period == "Q2") {
-      validOfferings = ["Q2", "S1", "Y"];
-    } else if (period == "Q3") {
-      validOfferings = ["Q3", "S2", "Y"];
-    } else if (period == "Q4") {
-      validOfferings = ["Q4", "S2", "Y"];
-    } else {
-      validOfferings = ["Y"];
-    }
-
+    // 1. FILTER LECTURES FIRST
+    List<String> validOfferings = _getValidOfferings(period);
     List<LectureData> filteredLectures = lectures.where((lecture) {
       return selectedModules.contains(lecture.module) &&
           validOfferings.contains(lecture.offered);
     }).toList();
 
-    await _storage.saveTimetable(filteredLectures);
+    // 2. DETECT CLASHES IN FILTERED LECTURES
+    _detectClashes(filteredLectures);
 
+    await _storage.saveTimetable(filteredLectures);
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => const WeeklyScreen()),
     );
+  }
+
+  List<String> _getValidOfferings(String period) {
+    switch (period) {
+      case "S1":
+        return ["S1", "Y"];
+      case "S2":
+        return ["S2", "Y"];
+      case "Q1":
+        return ["Q1", "S1", "Y"];
+      case "Q2":
+        return ["Q2", "S1", "Y"];
+      case "Q3":
+        return ["Q3", "S2", "Y"];
+      case "Q4":
+        return ["Q4", "S2", "Y"];
+      default:
+        return [];
+    }
+  }
+
+  void _detectClashes(List<LectureData> lectures) {
+    final Map<String, List<LectureData>> dayLectures = {};
+
+    // Reset clash status
+    for (final lecture in lectures) {
+      lecture.hasClash = false;
+    }
+
+    // Group by day
+    for (final lecture in lectures) {
+      dayLectures.putIfAbsent(lecture.day, () => []).add(lecture);
+    }
+
+    // Check overlaps per day
+    for (final day in dayLectures.keys) {
+      final dailyLectures = dayLectures[day]!
+        ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
+            .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
+
+      for (int i = 1; i < dailyLectures.length; i++) {
+        final prevEnd =
+            _timeToMinutes(dailyLectures[i - 1].time.split('-')[1].trim());
+        final currStart =
+            _timeToMinutes(dailyLectures[i].time.split('-')[0].trim());
+
+        if (currStart < prevEnd) {
+          dailyLectures[i - 1].hasClash = true;
+          dailyLectures[i].hasClash = true;
+        }
+      }
+    }
+  }
+
+  int _timeToMinutes(String timeStr) {
+    final parts = timeStr.split(':');
+    return int.parse(parts[0]) * 60 + int.parse(parts[1]);
   }
 
   @override

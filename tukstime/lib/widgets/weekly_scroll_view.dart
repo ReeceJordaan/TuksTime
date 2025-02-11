@@ -1,3 +1,5 @@
+// weekly_scroll_view.dart
+
 import 'package:flutter/material.dart';
 import 'package:tukstime/widgets/day_card.dart';
 import 'package:tukstime/data/lecture_data.dart';
@@ -44,7 +46,6 @@ class WeeklyScrollView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: days.length,
       itemBuilder: (context, i) {
-        // Add the missing dayLectures definition
         List<LectureData> dayLectures = [];
         if (timetable != null) {
           dayLectures = timetable!

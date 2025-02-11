@@ -1,0 +1,69 @@
+# Flutter/Dart-related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+generated/
+
+# iOS-related
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+
+# Android-related
+android/.gradle/
+android/app/proguard-rules.pro
+android/app/build/
+android/local.properties
+
+# VS Code/JetBrains IDEs/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.vscode/settings.json
+
+# macOS-related
+macos/Flutter/ephemeral/
+macos/build/
+
+# Windows-related
+windows/flutter/ephemeral/
+windows/build/
+
+# Web-related
+web/.dart_tool/
+web/build/
+
+# Linux-related
+linux/flutter/ephemeral/
+linux/build/
+
+# Firebase/Google Service files
+# Uncomment the following line if you're using Firebase but do not want to include the configuration file.
+# android/app/google-services.json
+# ios/Runner/GoogleService-Info.plist
+
+# Miscellaneous
+.DS_Store
+*.log
+*.lock
+*.tmp
+*.swp
+*.swo
+
+# Coverage
+coverage/
+
+# Flutter-Generated Localizations
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Testing
+test-results/

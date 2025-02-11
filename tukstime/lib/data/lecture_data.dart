@@ -1,3 +1,5 @@
+// lecture_data.dart
+
 class LectureData {
   final String module;
   final String offered;
@@ -7,6 +9,7 @@ class LectureData {
   final String day;
   final String time;
   final String venue;
+  bool hasClash;
   final String campus;
   final String studyProg;
 
@@ -21,6 +24,7 @@ class LectureData {
     required this.venue,
     required this.campus,
     required this.studyProg,
+    this.hasClash = false,
   });
 
   /// Factory to parse a row from the lectures.csv file.
@@ -36,6 +40,7 @@ class LectureData {
       venue: values[7].trim(),
       campus: values[8].trim(),
       studyProg: values.length > 9 ? values[9].trim() : '',
+      hasClash: false,
     );
   }
 
@@ -51,6 +56,7 @@ class LectureData {
       venue: json['venue'],
       campus: json['campus'],
       studyProg: json['studyProg'],
+      hasClash: json['hasClash'] ?? false,
     );
   }
 
@@ -66,6 +72,7 @@ class LectureData {
       'venue': venue,
       'campus': campus,
       'studyProg': studyProg,
+      'hasClash': hasClash,
     };
   }
 

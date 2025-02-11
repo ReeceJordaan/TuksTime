@@ -1,3 +1,5 @@
+// module_data.dart
+
 class ModuleData {
   final String module;
   final String venues; // Semicolon-separated list.
