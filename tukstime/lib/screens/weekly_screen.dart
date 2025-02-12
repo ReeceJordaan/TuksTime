@@ -166,6 +166,72 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
     );
   }
 
+  Future<void> _handleClashResolution(
+    LectureData selected,
+    List<LectureData> clashes,
+    List<LectureData> timetable,
+  ) async {
+    // Mark selected as resolved and remove others
+    final updated = timetable
+        .map((l) {
+          if (l == selected) return l..resolve();
+          if (clashes.contains(l)) return null;
+          return l;
+        })
+        .whereType<LectureData>()
+        .toList();
+
+    await _storage.saveTimetable(updated);
+    _refreshTimetable();
+  }
+
+  void _detectClashes(List<LectureData> lectures) {
+    final Map<String, List<LectureData>> dayLectures = {};
+
+    // Reset clash status
+    for (final lecture in lectures) {
+      lecture.hasClash = false;
+    }
+
+    // Group lectures by day
+    for (final lecture in lectures) {
+      dayLectures.putIfAbsent(lecture.day, () => []).add(lecture);
+    }
+
+    // Check for overlaps within each day
+    for (final day in dayLectures.keys) {
+      final dailyLectures = dayLectures[day]!
+        ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
+            .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
+
+      for (int i = 1; i < dailyLectures.length; i++) {
+        final prevEnd =
+            _timeToMinutes(dailyLectures[i - 1].time.split('-')[1].trim());
+        final currStart =
+            _timeToMinutes(dailyLectures[i].time.split('-')[0].trim());
+
+        if (currStart < prevEnd) {
+          dailyLectures[i - 1].hasClash = true;
+          dailyLectures[i].hasClash = true;
+        }
+      }
+    }
+  }
+
+  int _timeToMinutes(String timeStr) {
+    final parts = timeStr.split(':');
+    return int.parse(parts[0]) * 60 + int.parse(parts[1]);
+  }
+
+  void _refreshTimetable() {
+    setState(() {
+      _timetableFuture = _storage.loadTimetable().then((t) {
+        _detectClashes(t);
+        return t;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final monday = _getMondayOfCurrentWeek(DateTime.now());
@@ -201,6 +267,12 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
                         controllers: dayControllers,
                         timetable: timetable,
                         scrollOffset: scrollOffset,
+                        onClashResolution: (selected, clashes) =>
+                            _handleClashResolution(
+                          selected,
+                          clashes,
+                          timetable,
+                        ),
                       ),
                     ),
                   ],

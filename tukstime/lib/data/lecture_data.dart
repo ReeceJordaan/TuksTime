@@ -12,6 +12,7 @@ class LectureData {
   bool hasClash;
   final String campus;
   final String studyProg;
+  bool _isResolved = false;
 
   LectureData({
     required this.module,
@@ -74,6 +75,13 @@ class LectureData {
       'studyProg': studyProg,
       'hasClash': hasClash,
     };
+  }
+
+  bool get isResolved => _isResolved;
+
+  void resolve() {
+    _isResolved = true;
+    hasClash = false;
   }
 
   @override

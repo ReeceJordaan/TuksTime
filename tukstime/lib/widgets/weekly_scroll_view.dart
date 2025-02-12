@@ -8,12 +8,14 @@ class WeeklyScrollView extends StatelessWidget {
   final List<ScrollController> controllers;
   final List<LectureData>? timetable;
   final double scrollOffset;
+  final Function(LectureData, List<LectureData>) onClashResolution;
 
   const WeeklyScrollView({
     super.key,
     required this.controllers,
     this.timetable,
     required this.scrollOffset,
+    required this.onClashResolution,
   });
 
   String _abbreviateDay(String day) {
@@ -66,6 +68,7 @@ class WeeklyScrollView extends StatelessWidget {
               controller: controllers[i],
               lectures: dayLectures,
               scrollOffset: scrollOffset,
+              onClashResolution: onClashResolution,
             ),
           ),
         );
