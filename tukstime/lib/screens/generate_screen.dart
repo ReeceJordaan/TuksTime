@@ -315,26 +315,32 @@ class _GenerateScreenState extends State<GenerateScreen>
       lecture.hasClash = false;
     }
 
-    // Group by day
+    // Group lectures by day
     for (final lecture in lectures) {
       dayLectures.putIfAbsent(lecture.day, () => []).add(lecture);
     }
 
-    // Check overlaps per day
+    // Check all possible pairs for overlaps within each day
     for (final day in dayLectures.keys) {
       final dailyLectures = dayLectures[day]!
         ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
             .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
 
-      for (int i = 1; i < dailyLectures.length; i++) {
-        final prevEnd =
-            _timeToMinutes(dailyLectures[i - 1].time.split('-')[1].trim());
-        final currStart =
-            _timeToMinutes(dailyLectures[i].time.split('-')[0].trim());
+      for (int i = 0; i < dailyLectures.length; i++) {
+        final lectureA = dailyLectures[i];
+        final aStart = _timeToMinutes(lectureA.time.split('-')[0].trim());
+        final aEnd = _timeToMinutes(lectureA.time.split('-')[1].trim());
 
-        if (currStart < prevEnd) {
-          dailyLectures[i - 1].hasClash = true;
-          dailyLectures[i].hasClash = true;
+        for (int j = i + 1; j < dailyLectures.length; j++) {
+          final lectureB = dailyLectures[j];
+          final bStart = _timeToMinutes(lectureB.time.split('-')[0].trim());
+          final bEnd = _timeToMinutes(lectureB.time.split('-')[1].trim());
+
+          // Check if lectures overlap
+          if (aStart < bEnd && bStart < aEnd) {
+            lectureA.hasClash = true;
+            lectureB.hasClash = true;
+          }
         }
       }
     }
