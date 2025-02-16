@@ -73,6 +73,16 @@ class _DayCardState extends State<DayCard> {
     return (duration / 60).ceil();
   }
 
+  /// Returns the activity type based on the first letter of the activity string.
+  String _activityType(String activity) {
+    if (activity.isEmpty) return 'Undefined activity';
+    final firstLetter = activity[0].toUpperCase();
+    if (firstLetter == 'L') return 'Lecture';
+    if (firstLetter == 'P') return 'Practical';
+    if (firstLetter == 'T') return 'Tutorial';
+    return 'Undefined activity';
+  }
+
   void _handleClashTap(LectureData lecture) async {
     if (!lecture.hasClash) return;
 
@@ -160,10 +170,13 @@ class _DayCardState extends State<DayCard> {
               ),
               child: Center(
                 child: Padding(
-                  padding: const EdgeInsets.all(4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 4.0, vertical: 2.0),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      // Display the module
                       Text(
                         lecture.module,
                         style: TextStyle(
@@ -172,19 +185,21 @@ class _DayCardState extends State<DayCard> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      // Display the venue
                       Text(
-                        lecture.activity,
+                        lecture.venue,
                         style: const TextStyle(fontSize: 12),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                       ),
+                      // Display the computed activity type
                       Text(
-                        lecture.time,
+                        _activityType(lecture.activity),
                         style: TextStyle(
                           fontSize: 11,
                           color: Colors.grey[700],
                         ),
                       ),
-                      if (lecture.hasClash)
-                        const Icon(Icons.warning, color: Colors.red, size: 16),
                     ],
                   ),
                 ),
@@ -209,7 +224,7 @@ class _DayCardState extends State<DayCard> {
     }
 
     return Container(
-      width: 250,
+      width: 168,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16.0),
