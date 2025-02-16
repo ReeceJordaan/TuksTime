@@ -77,7 +77,7 @@ class _DayCardState extends State<DayCard> {
     if (!lecture.hasClash) return;
 
     final overlapping = widget.lectures!.where((l) {
-      if (l == lecture || !l.hasClash) return false;
+      if (!l.hasClash) return false;
       return _timesOverlap(lecture.time, l.time);
     }).toList();
 
