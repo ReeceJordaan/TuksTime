@@ -33,7 +33,6 @@ class _GenerateScreenState extends State<GenerateScreen>
   }
 
   /// Loads the modules CSV from assets using the new layout.
-  /// Returns true if the update was successful, false otherwise.
   Future<bool> _loadModuleCsv() async {
     try {
       setState(() {
@@ -46,7 +45,7 @@ class _GenerateScreenState extends State<GenerateScreen>
       for (int i = 1; i < lines.length; i++) {
         final line = lines[i].trim();
         if (line.isEmpty) continue;
-        // Split by comma. (Adjust if your CSV has commas within quotes.)
+        // Split by comma.
         final values = line.split(',');
         if (values.length >= 3) {
           modules.add(ModuleData.fromModulesCsv(values));
@@ -113,8 +112,7 @@ class _GenerateScreenState extends State<GenerateScreen>
     );
   }
 
-  /// Shows a custom snack bar that slides up from the bottom with a bounce,
-  /// stays for a short duration, then slides down.
+  /// Shows a custom snack bar.
   void _showCustomSnackBar(String message, bool success) {
     final overlay = Overlay.of(context);
     final animationController = AnimationController(
@@ -197,7 +195,7 @@ class _GenerateScreenState extends State<GenerateScreen>
     _saveCustomModules();
   }
 
-  // Builds the global refresh (update) button with a gradient style.
+  // Builds the global refresh button.
   Widget _buildGlobalRefreshButton() {
     return Container(
       width: 40,
@@ -226,7 +224,7 @@ class _GenerateScreenState extends State<GenerateScreen>
     );
   }
 
-  /// Builds a gradient button with the given text and onTap handler.
+  /// Builds a gradient button.
   Widget _buildSemesterButton(String text, VoidCallback onTap) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4.0),
@@ -259,14 +257,7 @@ class _GenerateScreenState extends State<GenerateScreen>
     );
   }
 
-  /// When a semester or quarter button is tapped, generate a timetable for that period.
-  ///
-  /// For Semester 1: modules with offered == "S1" or "Y"
-  /// For Semester 2: modules with offered == "S2" or "Y"
-  /// For Quarter 1: modules with offered == "Q1", "S1" or "Y"
-  /// For Quarter 2: modules with offered == "Q2", "S1" or "Y"
-  /// For Quarter 3: modules with offered == "Q3", "S2" or "Y"
-  /// For Quarter 4: modules with offered == "Q4", "S2" or "Y"
+  /// When a semester or quarter button is tapped.
   Future<void> _generateTimetable(String period) async {
     List<LectureData> lectures = await _loadLecturesCsv();
     List<String> selectedModules = _customModules.map((m) => m.module).toList();
@@ -310,23 +301,19 @@ class _GenerateScreenState extends State<GenerateScreen>
   void _detectClashes(List<LectureData> lectures) {
     final Map<String, List<LectureData>> dayLectures = {};
 
-    // Reset clash status
     for (final lecture in lectures) {
       lecture.hasClash = false;
     }
 
-    // Group lectures by day
     for (final lecture in lectures) {
       dayLectures.putIfAbsent(lecture.day, () => []).add(lecture);
     }
 
-    // Check for overlaps within each day
     for (final day in dayLectures.keys) {
       final dailyLectures = dayLectures[day]!
         ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
             .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
 
-      // Check all pairs of lectures for overlap
       for (int i = 0; i < dailyLectures.length; i++) {
         for (int j = i + 1; j < dailyLectures.length; j++) {
           final lectureA = dailyLectures[i];
@@ -341,7 +328,6 @@ class _GenerateScreenState extends State<GenerateScreen>
             lectureA.hasClash = true;
             lectureB.hasClash = true;
           } else {
-            // Since lectures are sorted, no need to check further once no overlap
             break;
           }
         }
@@ -367,23 +353,16 @@ class _GenerateScreenState extends State<GenerateScreen>
     bool hasQ3 = _customModules.any((m) => m.offered.contains("Q3"));
     bool hasQ4 = _customModules.any((m) => m.offered.contains("Q4"));
 
-    // For each semester, if there are no quarter modules then show the semester button.
-    // Otherwise, show the quarter buttons.
     bool showSemester1Button = hasS1 && !(hasQ1 || hasQ2);
     bool showSemester2Button = hasS2 && !(hasQ3 || hasQ4);
 
-    // For quarter buttons we want to show the individual quarter buttons if quarter modules exist.
-    // But if a semester module is also present (i.e. hasS1 or hasS2 is true), we “upgrade” to showing
-    // both quarter buttons even if one quarter had no module explicitly selected.
     bool showQuarter1Button;
     bool showQuarter2Button;
     if (hasQ1 || hasQ2) {
       if (hasS1) {
-        // With a semester module present, show the full quarter breakdown.
         showQuarter1Button = true;
         showQuarter2Button = true;
       } else {
-        // Without a semester module, only show the quarter buttons that actually have quarter modules.
         showQuarter1Button = hasQ1;
         showQuarter2Button = hasQ2;
       }
@@ -407,8 +386,6 @@ class _GenerateScreenState extends State<GenerateScreen>
       showQuarter4Button = false;
     }
 
-    // Build a list of timetable buttons. The semester buttons are added only if their
-    // corresponding conditions are met.
     final List<Widget> timetableButtons = <Widget>[];
     if (showSemester1Button) {
       timetableButtons.add(_buildSemesterButton("Generate for Semester 1", () {
@@ -454,10 +431,8 @@ class _GenerateScreenState extends State<GenerateScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Display timetable buttons conditionally.
                     ...timetableButtons,
                     const SizedBox(height: 20),
-                    // Autocomplete search bar.
                     Autocomplete<ModuleData>(
                       optionsBuilder: (TextEditingValue textEditingValue) {
                         if (textEditingValue.text.isEmpty) {
@@ -509,9 +484,7 @@ class _GenerateScreenState extends State<GenerateScreen>
                       onSelected: (ModuleData selection) {
                         _onModuleSelected(selection);
                         _searchController?.clear();
-                        // Keep the field in focus.
                         FocusScope.of(context).requestFocus(FocusNode());
-                        // Immediately re-request focus on the text field.
                         FocusScope.of(context).requestFocus(FocusNode());
                       },
                     ),
@@ -533,36 +506,169 @@ class _GenerateScreenState extends State<GenerateScreen>
                             itemCount: _customModules.length,
                             itemBuilder: (context, index) {
                               final module = _customModules[index];
+
+                              // Dummy options for dropdowns.
+                              final List<String> periodOptions = [
+                                "S1",
+                                "S2",
+                                "Q1",
+                                "Q2",
+                                "Q3",
+                                "Q4"
+                              ];
+                              final List<String> lectureGroupOptions = [
+                                "Any group",
+                                "Dont need",
+                                "L1",
+                                "L2"
+                              ];
+                              final List<String> tutorialGroupOptions = [
+                                "Any group",
+                                "Dont need",
+                                "T1",
+                                "T2"
+                              ];
+                              final List<String> practicalGroupOptions = [
+                                "Any group",
+                                "Dont need",
+                                "P1",
+                                "P2"
+                              ];
+
                               return Card(
                                 margin: const EdgeInsets.symmetric(vertical: 6),
-                                child: ListTile(
-                                  title: Text(module.module),
-                                  subtitle: Text(
-                                      'Venues: ${module.venues}\nCampuses: ${module.campuses}'),
-                                  trailing: Container(
-                                    width: 36,
-                                    height: 36,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      gradient: const LinearGradient(
-                                        colors: [
-                                          Color(0xFFFF5F6D),
-                                          Color(0xFFFFC371)
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            module.module,
+                                            style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 36,
+                                            height: 36,
+                                            decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              gradient: const LinearGradient(
+                                                colors: [
+                                                  Color(0xFFFF5F6D),
+                                                  Color(0xFFFFC371)
+                                                ],
+                                                begin: Alignment.topLeft,
+                                                end: Alignment.bottomRight,
+                                              ),
+                                            ),
+                                            child: IconButton(
+                                              padding: EdgeInsets.zero,
+                                              icon: const Icon(
+                                                Icons.delete,
+                                                color: Colors.white,
+                                                size: 18,
+                                              ),
+                                              onPressed: () =>
+                                                  _removeModule(module),
+                                              tooltip: 'Remove Module',
+                                            ),
+                                          ),
                                         ],
-                                        begin: Alignment.topLeft,
-                                        end: Alignment.bottomRight,
                                       ),
-                                    ),
-                                    child: IconButton(
-                                      padding: EdgeInsets.zero,
-                                      icon: const Icon(
-                                        Icons.delete,
-                                        color: Colors.white,
-                                        size: 18,
+                                      const SizedBox(height: 8),
+                                      // Period dropdown
+                                      DropdownButton<String>(
+                                        isExpanded: true,
+                                        value: module.selectedPeriod,
+                                        hint: const Text("Select Period"),
+                                        items: periodOptions
+                                            .map((option) =>
+                                                DropdownMenuItem<String>(
+                                                  value: option,
+                                                  child: Text(option),
+                                                ))
+                                            .toList(),
+                                        onChanged: (value) {
+                                          setState(() {
+                                            module.selectedPeriod = value;
+                                            _saveCustomModules();
+                                          });
+                                        },
                                       ),
-                                      onPressed: () => _removeModule(module),
-                                      tooltip: 'Remove Module',
-                                    ),
+                                      // Lecture group dropdown
+                                      DropdownButton<String>(
+                                        isExpanded: true,
+                                        value: module.selectedLectureGroup ??
+                                            "Any group",
+                                        hint:
+                                            const Text("Select Lecture Group"),
+                                        items: lectureGroupOptions
+                                            .map((option) =>
+                                                DropdownMenuItem<String>(
+                                                  value: option,
+                                                  child: Text(option),
+                                                ))
+                                            .toList(),
+                                        onChanged: (value) {
+                                          setState(() {
+                                            module.selectedLectureGroup = value;
+                                            _saveCustomModules();
+                                          });
+                                        },
+                                      ),
+                                      // Tutorial group dropdown (if applicable)
+                                      if (tutorialGroupOptions.isNotEmpty)
+                                        DropdownButton<String>(
+                                          isExpanded: true,
+                                          value: module.selectedTutorialGroup ??
+                                              "Any group",
+                                          hint: const Text(
+                                              "Select Tutorial Group"),
+                                          items: tutorialGroupOptions
+                                              .map((option) =>
+                                                  DropdownMenuItem<String>(
+                                                    value: option,
+                                                    child: Text(option),
+                                                  ))
+                                              .toList(),
+                                          onChanged: (value) {
+                                            setState(() {
+                                              module.selectedTutorialGroup =
+                                                  value;
+                                              _saveCustomModules();
+                                            });
+                                          },
+                                        ),
+                                      // Practical group dropdown
+                                      DropdownButton<String>(
+                                        isExpanded: true,
+                                        value: module.selectedPracticalGroup ??
+                                            "Any group",
+                                        hint: const Text(
+                                            "Select Practical Group"),
+                                        items: practicalGroupOptions
+                                            .map((option) =>
+                                                DropdownMenuItem<String>(
+                                                  value: option,
+                                                  child: Text(option),
+                                                ))
+                                            .toList(),
+                                        onChanged: (value) {
+                                          setState(() {
+                                            module.selectedPracticalGroup =
+                                                value;
+                                            _saveCustomModules();
+                                          });
+                                        },
+                                      ),
+                                    ],
                                   ),
                                 ),
                               );
