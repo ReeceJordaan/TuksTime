@@ -249,7 +249,7 @@ class _GenerateScreenState extends State<GenerateScreen>
     );
   }
 
-  /// Builds a gradient button.
+  /// Builds a gradient button for timetable generation.
   Widget _buildSemesterButton(String text, VoidCallback onTap) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4.0),
@@ -366,9 +366,92 @@ class _GenerateScreenState extends State<GenerateScreen>
 
   @override
   Widget build(BuildContext context) {
-    // (Timetable buttons and autocomplete code omitted for brevity.)
+    // Reinsert the timetable buttons (generate buttons) as in your original version.
+    bool hasS1 = _customModules
+        .any((m) => m.offered.contains("S1") || m.offered.contains("Y"));
+    bool hasQ1 = _customModules.any((m) => m.offered.contains("Q1"));
+    bool hasQ2 = _customModules.any((m) => m.offered.contains("Q2"));
+    bool hasS2 = _customModules
+        .any((m) => m.offered.contains("S2") || m.offered.contains("Y"));
+    bool hasQ3 = _customModules.any((m) => m.offered.contains("Q3"));
+    bool hasQ4 = _customModules.any((m) => m.offered.contains("Q4"));
+
+    bool showSemester1Button = hasS1 && !(hasQ1 || hasQ2);
+    bool showSemester2Button = hasS2 && !(hasQ3 || hasQ4);
+
+    bool showQuarter1Button;
+    bool showQuarter2Button;
+    if (hasQ1 || hasQ2) {
+      if (hasS1) {
+        showQuarter1Button = true;
+        showQuarter2Button = true;
+      } else {
+        showQuarter1Button = hasQ1;
+        showQuarter2Button = hasQ2;
+      }
+    } else {
+      showQuarter1Button = false;
+      showQuarter2Button = false;
+    }
+
+    bool showQuarter3Button;
+    bool showQuarter4Button;
+    if (hasQ3 || hasQ4) {
+      if (hasS2) {
+        showQuarter3Button = true;
+        showQuarter4Button = true;
+      } else {
+        showQuarter3Button = hasQ3;
+        showQuarter4Button = hasQ4;
+      }
+    } else {
+      showQuarter3Button = false;
+      showQuarter4Button = false;
+    }
+
     final List<Widget> timetableButtons = <Widget>[];
-    // ... (build timetable buttons as before) ...
+    if (showSemester1Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Semester 1", () {
+          _generateTimetable("S1");
+        }),
+      );
+    }
+    if (showSemester2Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Semester 2", () {
+          _generateTimetable("S2");
+        }),
+      );
+    }
+    if (showQuarter1Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Quarter 1", () {
+          _generateTimetable("Q1");
+        }),
+      );
+    }
+    if (showQuarter2Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Quarter 2", () {
+          _generateTimetable("Q2");
+        }),
+      );
+    }
+    if (showQuarter3Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Quarter 3", () {
+          _generateTimetable("Q3");
+        }),
+      );
+    }
+    if (showQuarter4Button) {
+      timetableButtons.add(
+        _buildSemesterButton("Generate for Quarter 4", () {
+          _generateTimetable("Q4");
+        }),
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -383,6 +466,7 @@ class _GenerateScreenState extends State<GenerateScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // Render timetable buttons at the top.
                     ...timetableButtons,
                     const SizedBox(height: 20),
                     Autocomplete<ModuleData>(

@@ -9,11 +9,11 @@ class TimeBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 60,
+      width: 40,
       color: Colors.grey[200],
       child: SingleChildScrollView(
         controller: controller,
-        padding: const EdgeInsets.only(top: 63.0, bottom: 40.0),
+        padding: const EdgeInsets.only(top: 40.0, bottom: 45.0),
         child: Column(
           children: List.generate(17, (i) => _buildTimeLabel(6 + i)),
         ),
@@ -23,7 +23,7 @@ class TimeBar extends StatelessWidget {
 
   Widget _buildTimeLabel(int hour) {
     return SizedBox(
-      height: 68,
+      height: 64, // Adjusted to align with timeslot height changes
       child: Center(
         child: Text(
           '${hour.toString().padLeft(2, '0')}:30',

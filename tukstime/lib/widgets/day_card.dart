@@ -156,7 +156,7 @@ class _DayCardState extends State<DayCard> {
             child: Container(
               height: (slotHeight * span) + 8 * (span - 1),
               margin:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
               decoration: BoxDecoration(
                 color: lecture.isResolved
                     ? Colors.blue.withOpacity(0.3)
@@ -171,7 +171,7 @@ class _DayCardState extends State<DayCard> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 4.0, vertical: 2.0),
+                      horizontal: 2.0, vertical: 1.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -212,7 +212,7 @@ class _DayCardState extends State<DayCard> {
         timeslotWidgets.add(
           Container(
             height: slotHeight,
-            margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+            margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
             decoration: BoxDecoration(
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(8.0),
@@ -240,8 +240,9 @@ class _DayCardState extends State<DayCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Outer padding reduced from 16 to 8.
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

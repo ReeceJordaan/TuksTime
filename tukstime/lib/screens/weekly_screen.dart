@@ -120,7 +120,6 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
 
   @override
   void dispose() {
-    //_timer?.cancel(); // Cancel the timer to prevent memory leaks.
     timeBarController.dispose();
     for (final c in dayControllers) {
       c.dispose();

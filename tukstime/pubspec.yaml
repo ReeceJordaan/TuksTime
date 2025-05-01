@@ -32,7 +32,7 @@ dependencies:
     sdk: flutter
   shared_preferences: ^2.0.15
   table_calendar: ^3.0.8
-  intl: ^0.18.0
+  intl: ^0.20.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

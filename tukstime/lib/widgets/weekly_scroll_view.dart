@@ -60,8 +60,7 @@ class WeeklyScrollView extends StatelessWidget {
         return SizedBox(
           height: MediaQuery.of(context).size.height - 100,
           child: Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
             child: DayCard(
               day: days[i],
               date: dates[i],
