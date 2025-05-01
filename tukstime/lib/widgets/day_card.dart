@@ -73,7 +73,6 @@ class _DayCardState extends State<DayCard> {
     return (duration / 60).ceil();
   }
 
-  /// Returns the activity type based on the first letter of the activity string.
   String _activityType(String activity) {
     if (activity.isEmpty) return 'Undefined activity';
     final firstLetter = activity[0].toUpperCase();
@@ -86,31 +85,36 @@ class _DayCardState extends State<DayCard> {
   void _handleClashTap(LectureData lecture) async {
     if (!lecture.hasClash) return;
 
-    final overlapping = widget.lectures!.where((l) {
-      if (!l.hasClash) return false;
-      return _timesOverlap(lecture.time, l.time);
-    }).toList();
+    final overlapping =
+        widget.lectures!.where((l) {
+          if (!l.hasClash) return false;
+          return _timesOverlap(lecture.time, l.time);
+        }).toList();
 
     final selected = await showDialog<LectureData>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Resolve Timetable Clash'),
-        content: SingleChildScrollView(
-          child: Column(
-            children: [
-              const Text('Select preferred activity:'),
-              ...overlapping.map((l) => ListTile(
-                    title: Text('${l.module} ${l.activity}'),
-                    subtitle: Text('Group: ${l.group}\nVenue: ${l.venue}'),
-                    tileColor: l.isResolved
-                        ? Colors.blue.withOpacity(0.1)
-                        : Colors.red.withOpacity(0.1),
-                    onTap: () => Navigator.pop(context, l),
-                  )),
-            ],
+      builder:
+          (context) => AlertDialog(
+            title: const Text('Resolve Timetable Clash'),
+            content: SingleChildScrollView(
+              child: Column(
+                children: [
+                  const Text('Select preferred activity:'),
+                  ...overlapping.map(
+                    (l) => ListTile(
+                      title: Text('${l.module} ${l.activity}'),
+                      subtitle: Text('Group: ${l.group}\nVenue: ${l.venue}'),
+                      tileColor:
+                          l.isResolved
+                              ? Colors.blue.withOpacity(0.1)
+                              : Colors.red.withOpacity(0.1),
+                      onTap: () => Navigator.pop(context, l),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
-        ),
-      ),
     );
 
     if (selected != null) {
@@ -154,29 +158,34 @@ class _DayCardState extends State<DayCard> {
           GestureDetector(
             onTap: () => _handleClashTap(lecture),
             child: Container(
-              height: (slotHeight * span) + 8 * (span - 1),
-              margin:
-                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 2.0),
+              height: (slotHeight * span) + 4 * (span - 1),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 8.0,
+                vertical: 2.0,
+              ),
               decoration: BoxDecoration(
-                color: lecture.isResolved
-                    ? Colors.blue.withOpacity(0.3)
-                    : lecture.hasClash
+                color:
+                    lecture.isResolved
+                        ? Colors.blue.withOpacity(0.3)
+                        : lecture.hasClash
                         ? Colors.red.withOpacity(0.4)
                         : Colors.lightBlueAccent.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(8.0),
-                border: lecture.hasClash
-                    ? Border.all(color: Colors.red, width: 2)
-                    : null,
+                border:
+                    lecture.hasClash
+                        ? Border.all(color: Colors.red, width: 2)
+                        : null,
               ),
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 2.0, vertical: 1.0),
+                    horizontal: 2.0,
+                    vertical: 1.0,
+                  ),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Display the module
                       Text(
                         lecture.module,
                         style: TextStyle(
@@ -185,20 +194,17 @@ class _DayCardState extends State<DayCard> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      // Display the venue
+
                       Text(
                         lecture.venue,
                         style: const TextStyle(fontSize: 12),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      // Display the computed activity type
+
                       Text(
                         _activityType(lecture.activity),
-                        style: TextStyle(
-                          fontSize: 11,
-                          color: Colors.grey[700],
-                        ),
+                        style: TextStyle(fontSize: 11, color: Colors.grey[700]),
                       ),
                     ],
                   ),
@@ -240,7 +246,6 @@ class _DayCardState extends State<DayCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Outer padding reduced from 16 to 8.
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -249,7 +254,9 @@ class _DayCardState extends State<DayCard> {
                 Text(
                   widget.day,
                   style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.bold),
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Text(
                   widget.date,
@@ -263,10 +270,7 @@ class _DayCardState extends State<DayCard> {
               controller: widget.controller,
               padding: EdgeInsets.only(bottom: 0),
               child: Column(
-                children: [
-                  ...timeslotWidgets,
-                  const SizedBox(height: 40),
-                ],
+                children: [...timeslotWidgets, const SizedBox(height: 40)],
               ),
             ),
           ),

@@ -24,6 +24,22 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
   double scrollOffset = 0;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final ValueNotifier<double> _indicatorPosition = ValueNotifier(0);
+  final List<String> eventTypes = [
+    'Lecture',
+    'Practical',
+    'Tutorial',
+    'Meeting',
+    'Other',
+  ];
+  final List<Map<String, String>> days = [
+    {'abbrev': 'Mon', 'full': 'Monday'},
+    {'abbrev': 'Tue', 'full': 'Tuesday'},
+    {'abbrev': 'Wed', 'full': 'Wednesday'},
+    {'abbrev': 'Thu', 'full': 'Thursday'},
+    {'abbrev': 'Fri', 'full': 'Friday'},
+    {'abbrev': 'Sat', 'full': 'Saturday'},
+    {'abbrev': 'Sun', 'full': 'Sunday'},
+  ];
 
   @override
   void initState() {
@@ -34,8 +50,7 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
     _timetableFuture = _storage.loadTimetable().then((timetable) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _setupScrollSync();
-        _scrollToCurrentTime(); // Initialize position
-        _updateIndicatorPosition(); // Initial update
+        _updateIndicatorPosition();
       });
       return timetable;
     });
@@ -46,24 +61,23 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
       if (!source.hasClients) return;
       final sourceOffset = source.offset;
 
-      // Update state: set the scroll offset and update the indicator's on-screen position.
       setState(() {
         scrollOffset = sourceOffset;
-        // Calculate the indicator's content position based on the current time.
         final now = DateTime.now();
         final startTime = DateTime(now.year, now.month, now.day, 6, 30);
-        const headerOffset = 96.0;
+        final headerOffset = 40 + MediaQuery.of(context).padding.top;
         double newIndicatorPos;
+
         if (now.isBefore(startTime)) {
           newIndicatorPos = headerOffset - scrollOffset;
         } else {
           final duration = now.difference(startTime);
           final totalMinutes =
               duration.inMinutes + (duration.inSeconds % 60) / 60;
-          final contentPos = headerOffset + (totalMinutes * 68 / 60);
+          final contentPos = headerOffset + (totalMinutes * 64 / 60);
           newIndicatorPos = contentPos - scrollOffset;
         }
-        // Update the indicator's position using the ValueNotifier.
+
         _indicatorPosition.value = newIndicatorPos;
       });
 
@@ -84,7 +98,6 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
 
     for (final controller in dayControllers) {
       controller.addListener(() => syncControllers(controller));
-      // Initialize off-screen controllers with the current position.
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (controller.hasClients && controller.offset != scrollOffset) {
           controller.jumpTo(scrollOffset);
@@ -96,19 +109,18 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
   void _updateIndicatorPosition() {
     final now = DateTime.now();
     final startTime = DateTime(now.year, now.month, now.day, 6, 30);
-    const headerOffset = 96.0;
+    final headerOffset = 40 + MediaQuery.of(context).padding.top;
 
     if (now.isBefore(startTime)) {
       _indicatorPosition.value = headerOffset - scrollOffset;
     } else {
       final duration = now.difference(startTime);
       final totalMinutes = duration.inMinutes + (duration.inSeconds % 60) / 60;
-      final contentPos = headerOffset + (totalMinutes * 68 / 60);
+      final contentPos = headerOffset + (totalMinutes * 64 / 60);
       _indicatorPosition.value = contentPos - scrollOffset;
     }
   }
 
-  // Scroll the TimeBar so that the current time is centered, or clamped if out of bounds.
   void _scrollToCurrentTime() {
     if (!timeBarController.hasClients) return;
     final viewportHeight = timeBarController.position.viewportDimension;
@@ -131,7 +143,7 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
     return date.subtract(Duration(days: date.weekday - DateTime.monday));
   }
 
-  Widget _buildAppBarBackground(String weekText) {
+  Widget _buildAppBarBackground(BuildContext context, String weekText) {
     return Container(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
@@ -141,10 +153,12 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 50.0),
+        padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
         child: Center(
-          child: Text(weekText,
-              style: const TextStyle(color: Colors.white, fontSize: 20)),
+          child: Text(
+            weekText,
+            style: const TextStyle(color: Colors.white, fontSize: 20),
+          ),
         ),
       ),
     );
@@ -156,10 +170,7 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
       builder: (context, value, child) {
         return Transform.translate(
           offset: Offset(0, value),
-          child: Container(
-            height: 2,
-            color: const Color(0xFF50E3C2),
-          ),
+          child: Container(height: 2, color: const Color(0xFF50E3C2)),
         );
       },
     );
@@ -170,15 +181,15 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
     List<LectureData> clashes,
     List<LectureData> timetable,
   ) async {
-    // Mark selected as resolved and remove others
-    final updated = timetable
-        .map((l) {
-          if (l == selected) return l..resolve();
-          if (clashes.contains(l)) return null;
-          return l;
-        })
-        .whereType<LectureData>()
-        .toList();
+    final updated =
+        timetable
+            .map((l) {
+              if (l == selected) return l..resolve();
+              if (clashes.contains(l)) return null;
+              return l;
+            })
+            .whereType<LectureData>()
+            .toList();
 
     await _storage.saveTimetable(updated);
     _refreshTimetable();
@@ -186,24 +197,22 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
 
   void _detectClashes(List<LectureData> lectures) {
     final Map<String, List<LectureData>> dayLectures = {};
-
-    // Reset clash status
     for (final lecture in lectures) {
       lecture.hasClash = false;
     }
 
-    // Group lectures by day
     for (final lecture in lectures) {
       dayLectures.putIfAbsent(lecture.day, () => []).add(lecture);
     }
 
-    // Check for overlaps within each day
     for (final day in dayLectures.keys) {
-      final dailyLectures = dayLectures[day]!
-        ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
-            .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
+      final dailyLectures =
+          dayLectures[day]!..sort(
+            (a, b) => _timeToMinutes(
+              a.time.split('-')[0].trim(),
+            ).compareTo(_timeToMinutes(b.time.split('-')[0].trim())),
+          );
 
-      // Check all pairs of lectures for overlap
       for (int i = 0; i < dailyLectures.length; i++) {
         for (int j = i + 1; j < dailyLectures.length; j++) {
           final lectureA = dailyLectures[i];
@@ -218,7 +227,6 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
             lectureA.hasClash = true;
             lectureB.hasClash = true;
           } else {
-            // Since lectures are sorted, no need to check further once no overlap
             break;
           }
         }
@@ -240,6 +248,153 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
     });
   }
 
+  List<String> getStartTimes() {
+    return List.generate(17, (i) {
+      final hour = 6 + i;
+      return '${hour.toString().padLeft(2, '0')}:30';
+    });
+  }
+
+  List<String> getEndTimes() {
+    return List.generate(17, (i) {
+      final hour = 7 + i;
+      return '${hour.toString().padLeft(2, '0')}:30';
+    });
+  }
+
+  void _showAddEventDialog() async {
+    final formKey = GlobalKey<FormState>();
+    String? eventName;
+    String? venue;
+    String? selectedType = eventTypes.first;
+    String? startTime = getStartTimes().first;
+    String? endTime = getEndTimes().first;
+    String? selectedDay = DateFormat('EEEE').format(DateTime.now());
+
+    await showDialog(
+      context: context,
+      builder:
+          (context) => AlertDialog(
+            title: const Text('Add New Event'),
+            content: Form(
+              key: formKey,
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        labelText: 'Event Name',
+                      ),
+                      validator: (v) => v!.isEmpty ? 'Required' : null,
+                      onSaved: (v) => eventName = v,
+                    ),
+                    TextFormField(
+                      decoration: const InputDecoration(labelText: 'Venue'),
+                      validator: (v) => v!.isEmpty ? 'Required' : null,
+                      onSaved: (v) => venue = v,
+                    ),
+                    DropdownButtonFormField<String>(
+                      value: selectedType,
+                      items:
+                          eventTypes
+                              .map(
+                                (type) => DropdownMenuItem(
+                                  value: type,
+                                  child: Text(type),
+                                ),
+                              )
+                              .toList(),
+                      onChanged: (v) => selectedType = v,
+                      decoration: const InputDecoration(
+                        labelText: 'Event Type',
+                      ),
+                    ),
+                    DropdownButtonFormField<String>(
+                      value: selectedDay,
+                      items:
+                          days
+                              .map(
+                                (day) => DropdownMenuItem(
+                                  value: day['full'],
+                                  child: Text(day['abbrev']!),
+                                ),
+                              )
+                              .toList(),
+                      onChanged: (v) => selectedDay = v,
+                      decoration: const InputDecoration(labelText: 'Day'),
+                    ),
+                    DropdownButtonFormField<String>(
+                      value: startTime,
+                      items:
+                          getStartTimes()
+                              .map(
+                                (time) => DropdownMenuItem(
+                                  value: time,
+                                  child: Text(time),
+                                ),
+                              )
+                              .toList(),
+                      onChanged: (v) => startTime = v,
+                      decoration: const InputDecoration(
+                        labelText: 'Start Time',
+                      ),
+                    ),
+                    DropdownButtonFormField<String>(
+                      value: endTime,
+                      items:
+                          getEndTimes()
+                              .map(
+                                (time) => DropdownMenuItem(
+                                  value: time,
+                                  child: Text(time),
+                                ),
+                              )
+                              .toList(),
+                      onChanged: (v) => endTime = v,
+                      decoration: const InputDecoration(labelText: 'End Time'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Cancel'),
+              ),
+              ElevatedButton(
+                onPressed: () async {
+                  if (formKey.currentState!.validate()) {
+                    formKey.currentState!.save();
+                    final newEvent = LectureData(
+                      module: eventName!,
+                      offered: '',
+                      group: '',
+                      language: '',
+                      activity: selectedType!,
+                      day: selectedDay!,
+                      time: '$startTime - $endTime',
+                      venue: venue!,
+                      campus: '',
+                      studyProg: '',
+                    );
+
+                    final timetable = await _timetableFuture;
+                    timetable.add(newEvent);
+                    await _storage.saveTimetable(timetable);
+                    _refreshTimetable();
+
+                    Navigator.pop(context);
+                  }
+                },
+                child: const Text('Save'),
+              ),
+            ],
+          ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final monday = _getMondayOfCurrentWeek(DateTime.now());
@@ -247,49 +402,54 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
         'Week of ${DateFormat('MMM dd').format(monday)}, ${DateTime.now().year}';
 
     return Scaffold(
-        key: _scaffoldKey,
-        appBar: AppBar(
-          elevation: 0,
-          toolbarHeight: 40,
-          iconTheme: const IconThemeData(color: Colors.white),
-          flexibleSpace: _buildAppBarBackground(weekText),
-        ),
-        drawer: _buildAppDrawer(context),
-        body: FutureBuilder<List<LectureData>>(
-          future: _timetableFuture,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            final timetable = snapshot.data ?? [];
+      key: _scaffoldKey,
+      appBar: AppBar(
+        elevation: 0,
+        toolbarHeight: 40,
+        iconTheme: const IconThemeData(color: Colors.white),
+        flexibleSpace: _buildAppBarBackground(context, weekText),
+      ),
+      drawer: _buildAppDrawer(context),
+      body: FutureBuilder<List<LectureData>>(
+        future: _timetableFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          final timetable = snapshot.data ?? [];
 
-            // Do not continuously sync scrolling—only scroll on initial load.
-            return Stack(
-              children: [
-                Row(
-                  key: const Key('timetableRow'),
-                  children: [
-                    TimeBar(controller: timeBarController),
-                    Expanded(
-                      child: WeeklyScrollView(
-                        controllers: dayControllers,
-                        timetable: timetable,
-                        scrollOffset: scrollOffset,
-                        onClashResolution: (selected, clashes) =>
-                            _handleClashResolution(
-                          selected,
-                          clashes,
-                          timetable,
-                        ),
-                      ),
+          return Stack(
+            children: [
+              Row(
+                key: const Key('timetableRow'),
+                children: [
+                  TimeBar(controller: timeBarController),
+                  Expanded(
+                    child: WeeklyScrollView(
+                      controllers: dayControllers,
+                      timetable: timetable,
+                      scrollOffset: scrollOffset,
+                      onClashResolution:
+                          (selected, clashes) => _handleClashResolution(
+                            selected,
+                            clashes,
+                            timetable,
+                          ),
                     ),
-                  ],
-                ),
-                _buildCurrentTimeIndicator(),
-              ],
-            );
-          },
-        ));
+                  ),
+                ],
+              ),
+              _buildCurrentTimeIndicator(),
+            ],
+          );
+        },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _showAddEventDialog,
+        child: const Icon(Icons.add),
+        backgroundColor: const Color(0xFF50E3C2),
+      ),
+    );
   }
 
   Widget _buildAppDrawer(BuildContext context) {
@@ -309,14 +469,19 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: const [
-                Text('TuksTime',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold)),
+                Text(
+                  'TuksTime',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 SizedBox(height: 8),
-                Text('Menu',
-                    style: TextStyle(color: Colors.white70, fontSize: 16)),
+                Text(
+                  'Menu',
+                  style: TextStyle(color: Colors.white70, fontSize: 16),
+                ),
               ],
             ),
           ),

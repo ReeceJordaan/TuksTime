@@ -122,8 +122,9 @@ class _GenerateScreenState extends State<GenerateScreen>
       final List<dynamic> jsonData = jsonDecode(jsonString);
       setState(() {
         _customModules.clear();
-        _customModules
-            .addAll(jsonData.map((data) => ModuleData.fromJson(data)).toList());
+        _customModules.addAll(
+          jsonData.map((data) => ModuleData.fromJson(data)).toList(),
+        );
       });
     }
   }
@@ -149,44 +150,44 @@ class _GenerateScreenState extends State<GenerateScreen>
       begin: const Offset(0, 1.0),
       end: const Offset(0, 0),
     ).animate(
-      CurvedAnimation(
-        parent: animationController,
-        curve: Curves.elasticOut,
-      ),
+      CurvedAnimation(parent: animationController, curve: Curves.elasticOut),
     );
 
     final overlayEntry = OverlayEntry(
-      builder: (context) => Positioned(
-        bottom: 50,
-        left: 16,
-        right: 16,
-        child: SlideTransition(
-          position: offsetAnimation,
-          child: Material(
-            elevation: 6,
-            borderRadius: BorderRadius.circular(10),
-            child: Container(
-              decoration: BoxDecoration(
+      builder:
+          (context) => Positioned(
+            bottom: 50,
+            left: 16,
+            right: 16,
+            child: SlideTransition(
+              position: offsetAnimation,
+              child: Material(
+                elevation: 6,
                 borderRadius: BorderRadius.circular(10),
-                gradient: const LinearGradient(
-                  colors: [Color(0xFF4A90E2), Color(0xFF50E3C2)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 14.0, horizontal: 16.0),
-                child: Text(
-                  message,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: Colors.white, fontSize: 16),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF4A90E2), Color(0xFF50E3C2)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 14.0,
+                      horizontal: 16.0,
+                    ),
+                    child: Text(
+                      message,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ),
     );
 
     overlay.insert(overlayEntry);
@@ -201,9 +202,11 @@ class _GenerateScreenState extends State<GenerateScreen>
 
   // When a module is selected from the autocomplete, add it to custom modules.
   void _onModuleSelected(ModuleData selection) {
-    if (!_customModules.any((m) =>
-        m.module.trim().toLowerCase() ==
-        selection.module.trim().toLowerCase())) {
+    if (!_customModules.any(
+      (m) =>
+          m.module.trim().toLowerCase() ==
+          selection.module.trim().toLowerCase(),
+    )) {
       setState(() {
         _customModules.add(selection);
       });
@@ -214,8 +217,10 @@ class _GenerateScreenState extends State<GenerateScreen>
   // Removes a module from the custom modules list.
   void _removeModule(ModuleData module) {
     setState(() {
-      _customModules.removeWhere((m) =>
-          m.module.trim().toLowerCase() == module.module.trim().toLowerCase());
+      _customModules.removeWhere(
+        (m) =>
+            m.module.trim().toLowerCase() == module.module.trim().toLowerCase(),
+      );
     });
     _saveCustomModules();
   }
@@ -271,9 +276,10 @@ class _GenerateScreenState extends State<GenerateScreen>
             child: Text(
               text,
               style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18),
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
             ),
           ),
         ),
@@ -288,10 +294,11 @@ class _GenerateScreenState extends State<GenerateScreen>
 
     // 1. FILTER LECTURES FIRST
     List<String> validOfferings = _getValidOfferings(period);
-    List<LectureData> filteredLectures = lectures.where((lecture) {
-      return selectedModules.contains(lecture.module) &&
-          validOfferings.contains(lecture.offered);
-    }).toList();
+    List<LectureData> filteredLectures =
+        lectures.where((lecture) {
+          return selectedModules.contains(lecture.module) &&
+              validOfferings.contains(lecture.offered);
+        }).toList();
 
     // 2. DETECT CLASHES IN FILTERED LECTURES
     _detectClashes(filteredLectures);
@@ -334,9 +341,12 @@ class _GenerateScreenState extends State<GenerateScreen>
     }
 
     for (final day in dayLectures.keys) {
-      final dailyLectures = dayLectures[day]!
-        ..sort((a, b) => _timeToMinutes(a.time.split('-')[0].trim())
-            .compareTo(_timeToMinutes(b.time.split('-')[0].trim())));
+      final dailyLectures =
+          dayLectures[day]!..sort(
+            (a, b) => _timeToMinutes(
+              a.time.split('-')[0].trim(),
+            ).compareTo(_timeToMinutes(b.time.split('-')[0].trim())),
+          );
 
       for (int i = 0; i < dailyLectures.length; i++) {
         for (int j = i + 1; j < dailyLectures.length; j++) {
@@ -367,12 +377,14 @@ class _GenerateScreenState extends State<GenerateScreen>
   @override
   Widget build(BuildContext context) {
     // Reinsert the timetable buttons (generate buttons) as in your original version.
-    bool hasS1 = _customModules
-        .any((m) => m.offered.contains("S1") || m.offered.contains("Y"));
+    bool hasS1 = _customModules.any(
+      (m) => m.offered.contains("S1") || m.offered.contains("Y"),
+    );
     bool hasQ1 = _customModules.any((m) => m.offered.contains("Q1"));
     bool hasQ2 = _customModules.any((m) => m.offered.contains("Q2"));
-    bool hasS2 = _customModules
-        .any((m) => m.offered.contains("S2") || m.offered.contains("Y"));
+    bool hasS2 = _customModules.any(
+      (m) => m.offered.contains("S2") || m.offered.contains("Y"),
+    );
     bool hasQ3 = _customModules.any((m) => m.offered.contains("Q3"));
     bool hasQ4 = _customModules.any((m) => m.offered.contains("Q4"));
 
@@ -460,83 +472,98 @@ class _GenerateScreenState extends State<GenerateScreen>
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: _isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    // Render timetable buttons at the top.
-                    ...timetableButtons,
-                    const SizedBox(height: 20),
-                    Autocomplete<ModuleData>(
-                      optionsBuilder: (TextEditingValue textEditingValue) {
-                        if (textEditingValue.text.isEmpty) {
-                          return const Iterable<ModuleData>.empty();
-                        }
-                        final searchText =
-                            textEditingValue.text.trim().toLowerCase();
-                        return _allModules.where((ModuleData module) {
-                          final moduleCode = module.module.trim().toLowerCase();
-                          return !_customModules.any((custom) =>
-                                  custom.module.trim().toLowerCase() ==
-                                  moduleCode) &&
-                              moduleCode.contains(searchText);
-                        });
-                      },
-                      displayStringForOption: (ModuleData module) =>
-                          module.module,
-                      fieldViewBuilder:
-                          (context, controller, focusNode, onFieldSubmitted) {
-                        _searchController = controller;
-                        return TextField(
-                          controller: controller,
-                          focusNode: focusNode,
-                          decoration: const InputDecoration(
-                            labelText: 'Search for modules',
-                            prefixIcon: Icon(Icons.search),
-                            border: OutlineInputBorder(),
-                          ),
-                          onSubmitted: (value) {
-                            if (value.isNotEmpty) {
-                              final searchText = value.trim().toLowerCase();
-                              final matches = _allModules.where((module) {
-                                final moduleCode =
-                                    module.module.trim().toLowerCase();
-                                return !_customModules.any((custom) =>
-                                        custom.module.trim().toLowerCase() ==
-                                        moduleCode) &&
-                                    moduleCode.contains(searchText);
-                              }).toList();
-                              if (matches.isNotEmpty) {
-                                _onModuleSelected(matches.first);
-                                controller.clear();
-                                focusNode.requestFocus();
+        child:
+            _isLoading
+                ? const Center(child: CircularProgressIndicator())
+                : SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // Render timetable buttons at the top.
+                      ...timetableButtons,
+                      const SizedBox(height: 20),
+                      Autocomplete<ModuleData>(
+                        optionsBuilder: (TextEditingValue textEditingValue) {
+                          if (textEditingValue.text.isEmpty) {
+                            return const Iterable<ModuleData>.empty();
+                          }
+                          final searchText =
+                              textEditingValue.text.trim().toLowerCase();
+                          return _allModules.where((ModuleData module) {
+                            final moduleCode =
+                                module.module.trim().toLowerCase();
+                            return !_customModules.any(
+                                  (custom) =>
+                                      custom.module.trim().toLowerCase() ==
+                                      moduleCode,
+                                ) &&
+                                moduleCode.contains(searchText);
+                          });
+                        },
+                        displayStringForOption:
+                            (ModuleData module) => module.module,
+                        fieldViewBuilder: (
+                          context,
+                          controller,
+                          focusNode,
+                          onFieldSubmitted,
+                        ) {
+                          _searchController = controller;
+                          return TextField(
+                            controller: controller,
+                            focusNode: focusNode,
+                            decoration: const InputDecoration(
+                              labelText: 'Search for modules',
+                              prefixIcon: Icon(Icons.search),
+                              border: OutlineInputBorder(),
+                            ),
+                            onSubmitted: (value) {
+                              if (value.isNotEmpty) {
+                                final searchText = value.trim().toLowerCase();
+                                final matches =
+                                    _allModules.where((module) {
+                                      final moduleCode =
+                                          module.module.trim().toLowerCase();
+                                      return !_customModules.any(
+                                            (custom) =>
+                                                custom.module
+                                                    .trim()
+                                                    .toLowerCase() ==
+                                                moduleCode,
+                                          ) &&
+                                          moduleCode.contains(searchText);
+                                    }).toList();
+                                if (matches.isNotEmpty) {
+                                  _onModuleSelected(matches.first);
+                                  controller.clear();
+                                  focusNode.requestFocus();
+                                }
                               }
-                            }
-                          },
-                        );
-                      },
-                      onSelected: (ModuleData selection) {
-                        _onModuleSelected(selection);
-                        _searchController?.clear();
-                        FocusScope.of(context).requestFocus(FocusNode());
-                        FocusScope.of(context).requestFocus(FocusNode());
-                      },
-                    ),
-                    const SizedBox(height: 20),
-                    const Text(
-                      'Custom Modules',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(height: 10),
-                    _customModules.isEmpty
-                        ? const Text(
+                            },
+                          );
+                        },
+                        onSelected: (ModuleData selection) {
+                          _onModuleSelected(selection);
+                          _searchController?.clear();
+                          FocusScope.of(context).requestFocus(FocusNode());
+                          FocusScope.of(context).requestFocus(FocusNode());
+                        },
+                      ),
+                      const SizedBox(height: 20),
+                      const Text(
+                        'Custom Modules',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      _customModules.isEmpty
+                          ? const Text(
                             'No custom modules selected.',
                             style: TextStyle(color: Colors.grey),
                           )
-                        : ListView.builder(
+                          : ListView.builder(
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: _customModules.length,
@@ -544,52 +571,74 @@ class _GenerateScreenState extends State<GenerateScreen>
                               final module = _customModules[index];
 
                               // Extract real data from lectures for this module.
-                              final moduleLectures = _allLectures
-                                  .where((lecture) =>
-                                      lecture.module.toLowerCase() ==
-                                      module.module.toLowerCase())
-                                  .toList();
+                              final moduleLectures =
+                                  _allLectures
+                                      .where(
+                                        (lecture) =>
+                                            lecture.module.toLowerCase() ==
+                                            module.module.toLowerCase(),
+                                      )
+                                      .toList();
 
                               // Unique period options (trimmed & sorted).
-                              final periodOptions = moduleLectures
-                                  .map((l) => l.offered.trim())
-                                  .toSet()
-                                  .toList();
+                              final periodOptions =
+                                  moduleLectures
+                                      .map((l) => l.offered.trim())
+                                      .toSet()
+                                      .toList();
                               periodOptions.sort();
 
                               // Unique groups per activity type (trimmed & sorted).
-                              final lectureGroups = moduleLectures
-                                  .where((l) =>
-                                      l.activity.toUpperCase().startsWith("L"))
-                                  .map((l) => l.group.trim())
-                                  .toSet()
-                                  .toList();
+                              final lectureGroups =
+                                  moduleLectures
+                                      .where(
+                                        (l) => l.activity
+                                            .toUpperCase()
+                                            .startsWith("L"),
+                                      )
+                                      .map((l) => l.group.trim())
+                                      .toSet()
+                                      .toList();
                               lectureGroups.sort();
-                              lectureGroups.removeWhere((g) =>
-                                  g.toLowerCase() == "any group" ||
-                                  g.toLowerCase() == "dont need");
+                              lectureGroups.removeWhere(
+                                (g) =>
+                                    g.toLowerCase() == "any group" ||
+                                    g.toLowerCase() == "dont need",
+                              );
 
-                              final tutorialGroups = moduleLectures
-                                  .where((l) =>
-                                      l.activity.toUpperCase().startsWith("T"))
-                                  .map((l) => l.group.trim())
-                                  .toSet()
-                                  .toList();
+                              final tutorialGroups =
+                                  moduleLectures
+                                      .where(
+                                        (l) => l.activity
+                                            .toUpperCase()
+                                            .startsWith("T"),
+                                      )
+                                      .map((l) => l.group.trim())
+                                      .toSet()
+                                      .toList();
                               tutorialGroups.sort();
-                              tutorialGroups.removeWhere((g) =>
-                                  g.toLowerCase() == "any group" ||
-                                  g.toLowerCase() == "dont need");
+                              tutorialGroups.removeWhere(
+                                (g) =>
+                                    g.toLowerCase() == "any group" ||
+                                    g.toLowerCase() == "dont need",
+                              );
 
-                              final practicalGroups = moduleLectures
-                                  .where((l) =>
-                                      l.activity.toUpperCase().startsWith("P"))
-                                  .map((l) => l.group.trim())
-                                  .toSet()
-                                  .toList();
+                              final practicalGroups =
+                                  moduleLectures
+                                      .where(
+                                        (l) => l.activity
+                                            .toUpperCase()
+                                            .startsWith("P"),
+                                      )
+                                      .map((l) => l.group.trim())
+                                      .toSet()
+                                      .toList();
                               practicalGroups.sort();
-                              practicalGroups.removeWhere((g) =>
-                                  g.toLowerCase() == "any group" ||
-                                  g.toLowerCase() == "dont need");
+                              practicalGroups.removeWhere(
+                                (g) =>
+                                    g.toLowerCase() == "any group" ||
+                                    g.toLowerCase() == "dont need",
+                              );
 
                               // For group dropdowns, add extra options if data exists.
                               final List<String> lectureGroupOptions =
@@ -611,20 +660,23 @@ class _GenerateScreenState extends State<GenerateScreen>
                               // Validate stored values.
                               String lectureGroupValue =
                                   module.selectedLectureGroup ?? "Any group";
-                              if (!lectureGroupOptions
-                                  .contains(lectureGroupValue)) {
+                              if (!lectureGroupOptions.contains(
+                                lectureGroupValue,
+                              )) {
                                 lectureGroupValue = "Any group";
                               }
                               String tutorialGroupValue =
                                   module.selectedTutorialGroup ?? "Any group";
-                              if (!tutorialGroupOptions
-                                  .contains(tutorialGroupValue)) {
+                              if (!tutorialGroupOptions.contains(
+                                tutorialGroupValue,
+                              )) {
                                 tutorialGroupValue = "Any group";
                               }
                               String practicalGroupValue =
                                   module.selectedPracticalGroup ?? "Any group";
-                              if (!practicalGroupOptions
-                                  .contains(practicalGroupValue)) {
+                              if (!practicalGroupOptions.contains(
+                                practicalGroupValue,
+                              )) {
                                 practicalGroupValue = "Any group";
                               }
 
@@ -655,7 +707,7 @@ class _GenerateScreenState extends State<GenerateScreen>
                                               gradient: const LinearGradient(
                                                 colors: [
                                                   Color(0xFFFF5F6D),
-                                                  Color(0xFFFFC371)
+                                                  Color(0xFFFFC371),
                                                 ],
                                                 begin: Alignment.topLeft,
                                                 end: Alignment.bottomRight,
@@ -668,8 +720,8 @@ class _GenerateScreenState extends State<GenerateScreen>
                                                 color: Colors.white,
                                                 size: 18,
                                               ),
-                                              onPressed: () =>
-                                                  _removeModule(module),
+                                              onPressed:
+                                                  () => _removeModule(module),
                                               tooltip: 'Remove Module',
                                             ),
                                           ),
@@ -685,15 +737,23 @@ class _GenerateScreenState extends State<GenerateScreen>
                                             const Text("Period"),
                                             DropdownButton<String>(
                                               isExpanded: true,
-                                              value: module.selectedPeriod ??
+                                              value:
+                                                  module.selectedPeriod ??
                                                   periodOptions.first,
-                                              items: periodOptions
-                                                  .map((option) =>
-                                                      DropdownMenuItem<String>(
-                                                        value: option,
-                                                        child: Text(option),
-                                                      ))
-                                                  .toList(),
+                                              items:
+                                                  periodOptions
+                                                      .map(
+                                                        (option) =>
+                                                            DropdownMenuItem<
+                                                              String
+                                                            >(
+                                                              value: option,
+                                                              child: Text(
+                                                                option,
+                                                              ),
+                                                            ),
+                                                      )
+                                                      .toList(),
                                               onChanged: (value) {
                                                 setState(() {
                                                   module.selectedPeriod = value;
@@ -713,15 +773,22 @@ class _GenerateScreenState extends State<GenerateScreen>
                                             DropdownButton<String>(
                                               isExpanded: true,
                                               value: lectureGroupValue,
-                                              items: lectureGroupOptions
-                                                  .map((option) =>
-                                                      DropdownMenuItem<String>(
-                                                        value: option,
-                                                        child: Text(
-                                                            formatGroupCode(
-                                                                option)),
-                                                      ))
-                                                  .toList(),
+                                              items:
+                                                  lectureGroupOptions
+                                                      .map(
+                                                        (option) =>
+                                                            DropdownMenuItem<
+                                                              String
+                                                            >(
+                                                              value: option,
+                                                              child: Text(
+                                                                formatGroupCode(
+                                                                  option,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                      )
+                                                      .toList(),
                                               onChanged: (value) {
                                                 setState(() {
                                                   module.selectedLectureGroup =
@@ -742,15 +809,22 @@ class _GenerateScreenState extends State<GenerateScreen>
                                             DropdownButton<String>(
                                               isExpanded: true,
                                               value: tutorialGroupValue,
-                                              items: tutorialGroupOptions
-                                                  .map((option) =>
-                                                      DropdownMenuItem<String>(
-                                                        value: option,
-                                                        child: Text(
-                                                            formatGroupCode(
-                                                                option)),
-                                                      ))
-                                                  .toList(),
+                                              items:
+                                                  tutorialGroupOptions
+                                                      .map(
+                                                        (option) =>
+                                                            DropdownMenuItem<
+                                                              String
+                                                            >(
+                                                              value: option,
+                                                              child: Text(
+                                                                formatGroupCode(
+                                                                  option,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                      )
+                                                      .toList(),
                                               onChanged: (value) {
                                                 setState(() {
                                                   module.selectedTutorialGroup =
@@ -771,15 +845,22 @@ class _GenerateScreenState extends State<GenerateScreen>
                                             DropdownButton<String>(
                                               isExpanded: true,
                                               value: practicalGroupValue,
-                                              items: practicalGroupOptions
-                                                  .map((option) =>
-                                                      DropdownMenuItem<String>(
-                                                        value: option,
-                                                        child: Text(
-                                                            formatGroupCode(
-                                                                option)),
-                                                      ))
-                                                  .toList(),
+                                              items:
+                                                  practicalGroupOptions
+                                                      .map(
+                                                        (option) =>
+                                                            DropdownMenuItem<
+                                                              String
+                                                            >(
+                                                              value: option,
+                                                              child: Text(
+                                                                formatGroupCode(
+                                                                  option,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                      )
+                                                      .toList(),
                                               onChanged: (value) {
                                                 setState(() {
                                                   module.selectedPracticalGroup =
@@ -796,9 +877,9 @@ class _GenerateScreenState extends State<GenerateScreen>
                               );
                             },
                           ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
       ),
     );
   }
