@@ -7,6 +7,7 @@ import 'package:tukstime/services/timetable_storage.dart';
 import 'package:tukstime/widgets/time_bar.dart';
 import 'package:tukstime/widgets/weekly_scroll_view.dart';
 import 'package:tukstime/screens/generate_screen.dart';
+import 'package:tukstime/screens/monthly_screen.dart';
 
 class WeeklyScreen extends StatefulWidget {
   const WeeklyScreen({super.key});
@@ -508,10 +509,17 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.calendar_month),
+            leading: const Icon(
+              Icons.calendar_month_outlined,
+              color: Color(0xFF4A90E2),
+            ), // Use one of the app's theme colors
             title: const Text('Monthly Calendar'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pop(context); // Close drawer
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const MonthlyScreen()),
+              );
             },
           ),
           ListTile(
